@@ -1,0 +1,65 @@
+:root{
+    --primary-color: #5198df;
+    --secundary-color: rgba(56, 56, 56, 0.137);
+    --shadow-color: #CCC;
+    --text-color: #FFF;
+}
+
+main{
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 70%;
+    margin: 5vh auto;
+    margin-top: 65px;
+    margin-left: 270px;
+    padding: 50px;
+    box-shadow: 2px 2px 10px var(--shadow-color);
+}
+
+#tableClient{
+    font-size: 14px;
+}
+
+#tableClient th{
+    font-size: 18px;
+}
+
+#cadastrarCliente{
+    display: flex;
+    position: absolute;
+    margin-top: -42px;
+    margin-left: 910px;
+}
+
+#verSenha{
+    position: absolute;
+    top: 440px;
+    left: 1020px;
+    width: 50px;
+    cursor: pointer;
+}
+#verConfSenha{
+    position: absolute;
+    top: 501px;
+    left: 1020px;
+    width: 50px;
+    cursor: pointer;
+}
+@media (max-width:480px){
+    header{
+        position:fixed;
+        width:100%;
+    }
+    .header-title{
+        font-size: 1.5rem;
+    }
+
+    main{
+        padding: 0;
+        margin: 20px 0 0 0;
+        width:100%;
+        box-shadow: none;
+    }
+}

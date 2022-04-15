@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/home.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jarvis_2.0</title>
+</head>
+
+<body>
+    <div id="conteinerPrincipal">
+        <div class="navbar">
+
+            <div class="pesquisa">
+                <input type="text" id="pesq" placeholder="Pesquisa" required>
+                <img class="lupa" src="img/lupa.png">
+                <button id="btn_start" onclick='sair()'>INICIAR</button>
+                <input class="date" type="date">
+                <a href="home.html">
+                    <img class="home_1" src="img/home_1.png"></a>
+            <div class="nav">
+                <input type="checkbox" id="chec">
+                <label for="chec">
+                <img class="menu1" src="img/menu_1.png">
+                <img class="menu2" src="img/menu_2.png">
+                </label>
+                <ul class="m_lat"> 
+                    <input type="checkbox" id="check1">
+                    <label class="labelCheck1" for="check1">Usuário</label>
+                    <img class="down" src="img/down_1.png">
+                <div class="user1">
+                    <ul id="user">
+                        <li><a href="usuarios.html">usuário</a></li>
+                        <li><a href="sessao_user.html">sessão de usuário</a></li>
+                    </ul>
+                </div>
+
+                <input type="checkbox" id="check2">
+                <label class="labelCheck2" for="check2">Status</label>
+                <img class="down2" src="img/down_1.png">
+                    <div class="user2">
+                        <ul id="user">
+                            <li><a href="">Status</a></li>
+                            <li><a href="">Sub-Status</a></li>
+                        </ul>
+                    </div>
+                    <li><a href="#" class="servicos">Dashboard</a></li>
+                    <li><a href="#" class="portifolio">Empresas</a></li>			
+                </ul>
+            </div>
+            </div>		
+        <h1 id="logado"></h1>
+        <button id="btn_sair" onclick='sair()'> Sair
+            <img class="sair" src="img/sair_2.png">
+        </button>
+        <h1 id="logado"></h1>
+    </div>
+    <Script src="js/javasctipt.js"></Script>
+    <script>
+        //Nome do usuário na tela!! 
+
+        //let apelid = window.prompt('Como gostaia de ser chamado?')
+        let userLogado = JSON.parse(localStorage.getItem('userLogado')) 
+        let logado = document.querySelector('#logado')
+        logado.innerHTML = `Olá ${userLogado.nome}`
+    </script>
+</body>
+</html>

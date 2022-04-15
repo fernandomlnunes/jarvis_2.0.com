@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/button.css">
+    <link rel="stylesheet" href="css/records.css">
+    <link rel="stylesheet" href="css/modal.css">
+
+    <link rel="stylesheet" href="css/home.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+    <title>jarvis_2.0</title>
+</head>
+
+<body>
+    <div id="conteinerPrincipal">
+        <div class="navbar">
+
+            <div class="pesquisa">
+                <input type="text" id="pesq" placeholder="Pesquisa" required>
+                <img class="lupa" src="img/lupa.png">
+                <button id="btn_start" onclick='sair()'>INICIAR</button>
+                <input class="date" type="date">
+                <a href="home.html">
+                    <img class="home_1" src="img/home_1.png"></a>
+
+            <div class="nav">
+                <input type="checkbox" id="chec">
+                <label for="chec">
+                <img class="menu1" src="img/menu_1.png">
+                <img class="menu2" src="img/menu_2.png">
+                </label>
+                <ul class="m_lat"> 
+                    <input type="checkbox" id="check1">
+                    <label class="labelCheck1" for="check1">Usuário</label>
+                    <img class="down" src="img/down_1.png">
+                <div class="user1">
+                    <ul id="user">
+                        <li><a href="usuarios.html">usuário</a></li>
+                        <li><a href="sessao_user.html">sessão de usuário</a></li>
+                    </ul>
+                </div>
+
+                <input type="checkbox" id="check2">
+                <label class="labelCheck2" for="check2">Status</label>
+                <img class="down2" src="img/down_1.png">
+                    <div class="user2">
+                        <ul id="user">
+                            <li><a href="">Status</a></li>
+                            <li><a href="">Sub-Status</a></li>
+                        </ul>
+                    </div>
+                    <li><a href="#" class="servicos">Dashboard</a></li>
+                    <li><a href="#" class="portifolio">Empresas</a></li>			
+                </ul>
+            </div>
+            </div>		
+        <h1 id="logado"></h1>
+        <button id="btn_sair" onclick='sair()'> Sair
+            <img class="sair" src="img/sair_2.png">
+        </button>  
+    </div>
+    <main>
+        <button type="button" class="button blue mobile" id="cadastrarCliente">Cadastrar Usuário</button>
+        <table id="tableClient" class="records">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>E-mail</th>
+                    <th>Empresa</th>
+                    <th>Cidade</th>
+                    <th>Ação</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+        <div class="modal" id="modal">
+            <div class="modal-content">
+                <header class="modal-header">
+                    <h2>Novo Usuário</h2>
+                    <span class="modal-close" id="modalClose">&#10006;</span>
+                </header>
+                <form id="form" class="modal-form">
+                    <input type="text" id="nome" data-index="new" class="modal-field" placeholder="Nome do Usuário" required>
+                    <input type="email" id="email" class="modal-field" placeholder="e-mail do Usuário" required>
+                    <input type="text" id="celular" class="modal-field" placeholder="Empresa do Usuário" required>
+                    <input type="text" id="cidade" class="modal-field" placeholder="Cidade do Usuário" required>
+                    <div>
+                        <input type="password" id="senha" class="modal-field" placeholder="Senha" required>
+                        <i id="verSenha" class="fa fa-eye" aria-hidden="true"></i>
+                    </div>
+                    <div>
+                        <input type="password" id="confSenha" class="modal-field" placeholder="Confirmar Senha" required>
+                        <i id="verConfSenha" class="fa fa-eye" aria-hidden="true"></i>
+                    </div>
+                    
+                </form>
+                <footer id="modal-footer" class="modal-footer">
+                    <button id="salvar" class="button green">Salvar</button>
+                    <button id="cancelar" class="button blue">Cancelar</button>
+                </footer>
+            </div>
+        </div>
+    </main>
+    <Script src="js/javasctipt.js"></Script>
+    <script src="js/main.js"></script>
+    <script src="js/see.js"></script>
+    <script>
+        
+        let userLogado = JSON.parse(localStorage.getItem('userLogado')) 
+        let logado = document.querySelector('#logado')
+        logado.innerHTML = `Olá ${userLogado.nome}`
+        </script>
+    </body>
+</html>
