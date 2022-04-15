@@ -161,21 +161,19 @@ function entrar(){
 
     let userValid = {
         nome: '',
-        email: '',
+        user: '',
         senha: ''
     }
 
-    listaUser_log = JSON.parse(localStorage.getItem('db_client'))
+    listaUser_log = JSON.parse(localStorage.getItem('listaUser'))
 
     listaUser_log.forEach((item) => {
-        if(usuario_log.value == item.nome && senha_log.value == item.senha){
+        if(usuario_log.value == item.userCad && senha_log.value == item.passwordCad){
 
             userValid = {
-                nome: item.nome,
-                email: item.email,
-                celular: item.celular,
-                cidade: item.cidade,
-                senha: item.senha
+                nome: item.nomeCad,
+                user: item.userCad,
+                senha: item.passwordCad
             }
         }
     })
