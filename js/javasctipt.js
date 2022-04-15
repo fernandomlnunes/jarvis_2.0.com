@@ -199,8 +199,8 @@ function entrar(){
 }
 
 if(localStorage.getItem('token') == null){
-    alert('Você precisa estar logado para acessa essa página')
-    window.location.href = 'index.html'
+    //alert('Você precisa estar logado para acessa essa página')
+    //window.location.href = 'index.html'
 }
 
 function sair(){
