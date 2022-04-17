@@ -160,6 +160,7 @@ function entrar(){
     let listaUser_log = []
 
     let userValid = {
+        nomeCad: '',
         userCad: '',
         passwordCad: ''
     }
@@ -170,6 +171,7 @@ function entrar(){
         if(usuario_log.value == item.userCad && senha_log.value == item.passwordCad){
 
             userValid = {
+                nomeCad: item.nomeCad,               
                 userCad: item.userCad,
                 passwordCad: item.passwordCad
             }
