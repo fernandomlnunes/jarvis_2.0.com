@@ -160,7 +160,6 @@ function entrar(){
     let listaUser_log = []
 
     let userValid = {
-        nomeCad: '',
         userCad: '',
         passwordCad: ''
     }
@@ -171,14 +170,13 @@ function entrar(){
         if(usuario_log.value == item.userCad && senha_log.value == item.passwordCad){
 
             userValid = {
-                nomeCad: item.nomeCad,
                 userCad: item.userCad,
                 passwordCad: item.passwordCad
             }
         }
     })
 
-    if(usuario_log.value == userValid.nome && senha_log.value == userValid.senha){
+    if(usuario_log.value == userValid.userCad && senha_log.value == userValid.passwordCad){
 
         window.location.href = 'home.html'
 
