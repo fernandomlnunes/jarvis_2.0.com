@@ -160,9 +160,9 @@ function entrar(){
     let listaUser_log = []
 
     let userValid = {
-        nome: '',
-        user: '',
-        senha: ''
+        nomeCad: '',
+        userCad: '',
+        passwordCad: ''
     }
 
     listaUser_log = JSON.parse(localStorage.getItem('listaUser'))
@@ -171,9 +171,9 @@ function entrar(){
         if(usuario_log.value == item.userCad && senha_log.value == item.passwordCad){
 
             userValid = {
-                nome: item.nomeCad,
-                user: item.userCad,
-                senha: item.passwordCad
+                nomeCad: item.nomeCad,
+                userCad: item.userCad,
+                passwordCad: item.passwordCad
             }
         }
     })
