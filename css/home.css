@@ -198,7 +198,7 @@ body{
 .user1{
 	overflow: hidden;
 	max-height: 0;
-	margin-left: 2vw;
+	margin-left: -0.6vw;
 	margin-top: 5px;
 	list-style: none;
 }
@@ -224,7 +224,7 @@ display: none;
 .user2{
 	overflow: hidden;
 	max-height: 0;
-	margin-left: 2vw;
+	margin-left: -0.6vw;
 }
 #check2{
 	display: none;
