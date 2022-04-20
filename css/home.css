@@ -157,7 +157,7 @@ body{
 	margin-left: -12vw;
 	background-color: #0a66c2;
 	position: relative;
-	width: 200px;
+	width: 180px;
 }
 .m_lat a{
 	display: block;
@@ -198,8 +198,9 @@ body{
 .user1{
 	overflow: hidden;
 	max-height: 0;
-	margin-left: -0.6vw;
+	margin-left: -2.1vw;
 	margin-top: 5px;
+	width: 300px;
 	list-style: none;
 }
 #user{
@@ -224,7 +225,8 @@ display: none;
 .user2{
 	overflow: hidden;
 	max-height: 0;
-	margin-left: -0.6vw;
+	margin-left: -2.1vw;
+	width: 300px;
 }
 #check2{
 	display: none;
@@ -423,7 +425,7 @@ a:hover{
 
 #cadastrarCliente1{
 	margin-top: -40px;
-	margin-left: 980px;
+	margin-left: 63vw;
 }
 .modal_up{
 	position: fixed;
@@ -472,4 +474,3 @@ a:hover{
 .btn_ss:hover{
 	background-color: rgba(233, 42, 42, 0.678);
 }
-
