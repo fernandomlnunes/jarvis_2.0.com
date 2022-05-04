@@ -3,16 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/dashboard.css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/button.css">
-    <link rel="stylesheet" href="css/records-status.css">
-    <link rel="stylesheet" href="css/modal-status.css">
-
-    <link rel="stylesheet" href="css/home.css"/>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-   
     <title>jarvis_2.0</title>
 </head>
 
@@ -27,7 +19,6 @@
 
                 <a href="home.html">
                     <img class="home_1" src="img/home_1.png"></a>
-
             <div class="nav">
                 <input type="checkbox" id="chec">
                 <label for="chec">
@@ -44,56 +35,45 @@
                         <li><a href="sessao_user.html">sessão de usuário</a></li>
                     </ul>
                 </div>
-                <li><a href="status.html">Status</a></li>
-                <li><a href="dashboard.html" class="servicos">Dashboard</a></li>
-                <li><a href="#" class="portifolio">Empresas</a></li>			
+
+                    <li><a href="status.html">Status</a></li>
+                    <li><a href="dashboard.html" class="servicos">Dashboard</a></li>
+                    <li><a href="#" class="portifolio">Empresas</a></li>			
                 </ul>
             </div>
             </div>		
         <h1 id="logado"></h1>
         <button id="btn_sair" onclick='sair()'> Sair
             <img class="sair" src="img/sair_2.png">
-        </button>  
+        </button>
+        <h1 id="logado"></h1>
     </div>
     <main>
-        <button type="button" class="button blue mobile" id="cadastrarStatus">Novo Status</button>
-        <table id="tableClient" class="records">
-            <thead class="title-status">
-                <tr>
-                    <th>Status</th>
-                    <th>Editar</th>
-                </tr>
-            </thead>
-            <tbody class="tbody-st">
-
-            </tbody>
-        </table>
-        <div class="modal" id="modal">
-            <div class="modal-content">
-                <header class="modal-header">
-                    <h2>Novo Status</h2>
-                    <span class="modal-close" id="modalClose">&#10006;</span>
-                </header>
-                <form id="form" class="modal-form">
-                    <input type="text" id="nome" data-index="new" class="modal-field" placeholder="Novo status" required>
-
-                    
-                </form>
-                <footer id="modal-footer" class="modal-footer">
-                    <button id="salvar" class="button green">Salvar</button>
-                    <button id="cancelar" class="button blue">Cancelar</button>
-                </footer>
-            </div>
+        <div class="bar-ctx"> 
+            <canvas id="g_barra" class="g_barra" width="500" height="400"></canvas>
+        </div>
+        <div class="bar_1_ctx"> 
+            <canvas id="g_barra_1" class="g_barra_1" width="500" height="400"></canvas>
+        </div>
+        <div class="line-ctx">
+            <canvas id="g_linha" class="g_linha"></canvas>
+        </div>
+        <div class="circulo-ctx">
+            <canvas id="g_circulo" class="g_circulo"></canvas>
+        </div>
+        <div class="radar-ctx">
+            <canvas id="g_radar" class="g_radar"></canvas>
         </div>
     </main>
     <Script src="js/javasctipt.js"></Script>
-    <script src="js/main-status.js"></script>
-    <script src="js/see.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.js"></script>  
+    <script src="js/dash.js"></script>  
     <script>
-        
+        //Nome do usuário na tela!! 
+        //let apelid = window.prompt('Como gostaia de ser chamado?')
         let userLogado = JSON.parse(localStorage.getItem('userLogado')) 
         let logado = document.querySelector('#logado')
         logado.innerHTML = `Olá ${userLogado.userCad}`
-        </script>
-    </body>
+    </script>
+</body>
 </html>

@@ -1,0 +1,503 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body{
+    background-color: white;
+    font-family: 'Roboto';
+	width: 100%;
+}
+.continer_principal{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.navbar{
+	position: fixed;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	background-color: #0a66c2;
+	margin-top: -30px;
+	width: 100%;
+	margin-left: -08px;
+	height: 70px;
+	z-index: 1;
+}
+#logado{
+	display: flex;
+	list-style: none;
+	position: fixed;
+	margin-left: 80%;
+	top: -2px;
+	font-size: 14pt;
+	color: rgb(56, 56, 56);
+}
+#btn_sair{
+	display: flex;
+	list-style: none;
+	position: fixed;
+	margin-left: 94%;
+	top: -12px;
+	font-size: 12pt;
+	padding: 6px;
+	background: none;
+	border: none;
+	cursor: pointer;
+	color: rgb(56, 56, 56)	;
+}
+.sair{
+	margin-top:-3px;
+	margin-left: 8px;
+	cursor: pointer;
+	color: rgb(56, 56, 56);
+}
+.pesquisa{
+	border-radius: 0;
+	border-color: transparent;
+	margin-top: 28px;
+	margin-left: 42%;
+	width: 420px;
+	height: 30px;
+	background-color: transparent;
+	border: 0;
+	color: gray;
+}
+#pesq{
+	border-radius: 10px;
+	border: 0;
+	border-color: transparent;
+	margin-top: 0;
+	margin-left: 0;
+	width: 420px;
+	height: 30px;
+	border-color: white;
+	background-color: white;
+	outline: 0;
+}
+.lupa{
+	display: block;
+	margin-top: -26px;
+	margin-left: 390px;
+	cursor: pointer;
+}
+#btn_start{
+	display: block;
+	margin-top: -29px;
+	margin-left: -38%;
+	height: 32px;
+	border-radius: 10px;
+	outline: 0;
+	background-color: white;
+	border-color: transparent;
+	cursor: pointer;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 0px 8px 0px 8px;
+	color: rgb(56, 56, 56);
+}
+.menu1{
+	display: block;
+	border-color: transparent;
+	padding: 3px;
+	margin-top: -42px;
+	margin-left: -7vw;
+	border-radius: 10px;
+	outline: 0;
+	cursor: pointer;
+}
+.menu2{
+	display: block;
+	border-color: transparent;
+	padding: 3px;
+	margin-top: -55px;
+	margin-left: -7vw;
+	border-radius: 10px;
+	outline: 0;
+	cursor: pointer;
+}
+.menu1:hover{
+	display: block;
+}
+.menu2:hover{
+	display: none;
+}
+.nav{
+	position: absolute;
+	display: block;
+	margin-top: -px;
+	margin-left: -480px;
+	height: 2000%;
+}
+#chec{
+	display: none;
+	position: absolute;
+	z-index: 2;	
+	height: 100%;
+}
+#chec:checked ~ .m_lat{
+	transform: translateX(-280px);
+}
+.m_lat{
+	height: 2000%;
+	align-items: center;
+	padding: 10px 25px;
+	display: block;
+	list-style: none;
+	margin-top: -5px;
+	margin-left: -12vw;
+	background-color: #0a66c2;
+	position: relative;
+	width: 180px;
+}
+.m_lat a{
+	display: block;
+	padding: 0.2vw 4vw;
+	color: rgb(56, 56, 56);
+	text-decoration: none;
+}
+.m_lat a:hover{
+	transition: background-color 0s;
+	color: white;
+	border-radius: 10px;
+}
+.down{
+	display: block;
+	margin-top: -22px;
+	margin-left: 8vw;
+	cursor: pointer;
+	z-index: 10;
+}
+.down2{
+	display: block;
+	margin-top: -22px;
+	margin-left: 11vw;
+	cursor: pointer;
+}
+.sub_1_lat{
+	list-style: none;
+	text-decoration: none;
+	display: none;
+    position: absolute;
+	margin-left: -35px;
+}
+.m_lat li:hover .sub_1_lat{
+    display: block;
+	position: relative;		
+    text-decoration: none;
+}
+.user1{
+	overflow: hidden;
+	max-height: 0;
+	margin-left: -2.1vw;
+	margin-top: 5px;
+	width: 300px;
+	list-style: none;
+}
+#user{
+	list-style: none;
+}
+#check1{
+display: none;
+}
+.labelCheck1{
+	color: rgb(56, 56, 56);
+	margin-left: 4vw;
+	cursor: pointer;
+	font-weight: bold;
+}
+.labelCheck1:hover{
+	color: white;
+}
+#check1:checked ~ .user1 {
+	height: auto;
+	max-height: 200px;
+}
+.user2{
+	overflow: hidden;
+	max-height: 0;
+	margin-left: -2.1vw;
+	width: 300px;
+}
+#check2{
+	display: none;
+}
+.labelCheck2{
+	color: rgb(56, 56, 56);
+	margin-left: 4vw;
+	cursor: pointer;
+	font-weight: bold;
+}
+.labelCheck2:hover{
+	color: white;
+}
+#check2:checked ~ .user2 {
+	height: auto;
+	max-height: 600px;
+}
+.home_1{
+	position: absolute;
+	display: flex;
+	margin-top: -28px;
+	margin-left: 50vw;
+	cursor: pointer;
+}
+
+.box_user{
+	position: absolute;
+	display: flex;
+	margin-top: 160px;
+	margin-left: 380px;
+	width: 950px;
+	height: 500px;
+	border-style: solid;
+	border-color: rgb(163, 163, 163);
+	border-radius: 3px;
+	background-color: none;
+}
+
+#btn_cad_user{
+	position: absolute;
+	display: flex;
+	margin-top: 115px;
+	margin-left: 1225px;
+	background-color: #0a66c2;
+	border-radius: 8px;
+	padding: 5px 8px;
+	color: white;
+	cursor: pointer;
+	text-decoration: none;
+}
+.users{
+	padding: 5px 15px;
+	text-align: center;
+	align-items: center;
+	width: 950px;
+	color: rgb(56, 56, 56);
+}
+.linha{
+	height: 2px;
+	color: rgb(163, 163, 163);
+	background-color: rgb(163, 163, 163);
+}
+.txt_Cadastro{
+	display: flex;
+	position: relative;
+	margin-top: 70px;
+	margin-left: 750px;
+	font-size: 24px;
+	align-items: center;
+	text-align: center;
+	font-weight: bold;
+	color: rgb(56, 56, 56);
+}
+.label-float input{
+    width: 100%;
+    padding: 5px 5px;
+    display: inline-block;
+    border: 0;
+    border-bottom: 2px solid rgb(163, 163, 163);
+    background-color: transparent;
+    outline: none;
+    min-width: 180px;
+    font-size: 16px;
+    transition: all .3s ease-out;
+    border-radius: 0;
+}
+.label-float{
+    position: relative;
+    padding-top: 13px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.label-float input:focus{
+    border-bottom: 2px solid #0a66c2;
+}
+.label-float label{
+    color: rgb(163, 163, 163);
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 13px;
+    transition: all .3s ease-out;
+}
+.label-float input:focus + label,
+.label-float input:valid + label{
+    font-size: 13px;
+    margin-top: 0;
+}
+button{
+    background-color: transparent;
+    border-color: rgb(163, 163, 163);
+    color: rgb(163, 163, 163);
+    padding: 7px;
+    font-weight: bold;
+    font-size: 12pt;
+    margin-top: 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    overflow: none;
+    transition: all .5s ease-out;
+}
+button:hover{
+    background-color: rgb(163, 163, 163) ;
+    color: black;
+}
+.justify-center{
+    display: flex;
+    justify-content: center;
+}
+hr{
+    margin-top: 10%;
+    margin-bottom: 10%;
+    width: 60%;
+}
+p{
+    color: rgb(163, 163, 163);
+    font-size: 14pt;
+    text-align: center;
+}
+a{
+    color: gray;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all .3s ease-out;
+}
+a:hover{
+    color: #0a66c2;
+}
+/* Cadastro */
+.tela_cad{
+
+    position: absolute;
+    border-radius: 5%;
+    color: rgb(163, 163, 163);
+    padding: 30px;
+    width: 800px;
+}
+.fa-eye{
+    position: absolute;
+    top: 15px;
+    right: 8px;
+    cursor: pointer;
+}
+.fa-eya{
+    position: absolute;
+    top: 15px;
+    right: 8px;
+    cursor: pointer;
+}
+#msgError{
+    text-align: center;
+    color: white;
+    background-color: gray;
+    padding: 10px;
+    border-radius: 4px;
+    display: none;
+}
+#msgSucces{
+    text-align: center;
+    color: green;
+    background-color: red ;
+    padding: 10px;
+    border-radius: 4px;
+    display: none;
+}
+#msgSuccesEnter{
+    text-align: center;
+    color: green;
+    background-color: #0a66c2;
+    padding: 10px;
+    border-radius: 4px;
+    display: none;
+}
+/* sessão user */
+
+#cadastrarCliente1{
+	margin-top: -40px;
+	margin-left: 63vw;
+}
+.modal_up{
+	position: fixed;
+	padding: 0;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: rgba(0,0,0,0.5);
+	z-index: 10;
+	transform: scale(1.1);
+	opacity: 0;
+	visibility: hidden;
+	transition: visibility 0.25s ease-in-out, transform 0.25s ease-in-out, opacity 0.25s ease-in-out;
+}
+.modal_cont{
+	background-color: white;
+	padding: 16px 24px;
+	width: 384px;
+	border-radius: 0.5rem;
+}
+.span_1{
+	float: right;
+	width: 24px;
+	cursor: pointer;
+	background-color: lightgray;
+	text-align: center;
+	line-height: 24px;
+	border-radius: 3px;
+}
+.span_1:hover{
+	background-color: rgba(253, 63, 63, 0.65);
+}
+.show-modal{
+	opacity: 1;
+	visibility: visible;
+	transform: scale(1.0);
+}
+.btn_ss{
+	background-color: #4b94dd;
+	color: white;
+}
+.btn_ss:hover{
+	background-color: rgba(233, 42, 42, 0.678);
+}
+.bar-ctx{
+	display: block;
+	position: absolute;
+	width: 370px;
+	margin-top: 10%;
+	margin-left: 18%;
+}
+.bar_1_ctx{
+	display: block;
+	position: absolute;
+	width: 370px;
+	margin-top: 10%;
+	margin-left: 45%;
+}
+.line-ctx{
+	display: block;
+	position: absolute;
+	width: 800px;
+	height: 100px;
+	margin-top: 32%;
+	margin-left: 18%;
+}
+.circulo-ctx{
+	display: block;
+	position: absolute;
+	width: 350px;
+	height: 100px;
+	margin-top: 32%;
+	margin-left: 73%;
+}
+.radar-ctx{
+	display: block;
+	position: absolute;
+	width: 350px;
+	height: 100px;
+	margin-top: 5%;
+	margin-left: 73%;
+}
