@@ -26,7 +26,7 @@ body{
 	display: flex;
 	list-style: none;
 	position: fixed;
-	margin-left: 80%;
+	margin-left: 70%;
 	top: -2px;
 	font-size: 14pt;
 	color: rgb(56, 56, 56);
@@ -35,7 +35,7 @@ body{
 	display: flex;
 	list-style: none;
 	position: fixed;
-	margin-left: 94%;
+	margin-left: 90%;
 	top: -12px;
 	font-size: 12pt;
 	padding: 6px;
@@ -99,7 +99,7 @@ body{
 	border-color: transparent;
 	padding: 3px;
 	margin-top: -42px;
-	margin-left: -12vw;
+	margin-left: -9vw;
 	border-radius: 10px;
 	outline: 0;
 	cursor: pointer;
@@ -109,7 +109,7 @@ body{
 	border-color: transparent;
 	padding: 3px;
 	margin-top: -55px;
-	margin-left: -12vw;
+	margin-left: -9vw;
 	border-radius: 10px;
 	outline: 0;
 	cursor: pointer;
@@ -143,10 +143,10 @@ body{
 	display: block;
 	list-style: none;
 	margin-top: -5px;
-	margin-left: -17vw;
+	margin-left: -14vw;
 	background-color: #0a66c2;
 	position: relative;
-	width: 180px;
+	width: 220px;
 }
 .m_lat a{
 	display: block;
@@ -187,9 +187,9 @@ body{
 .user1{
 	overflow: hidden;
 	max-height: 0;
-	margin-left: -2.1vw;
+	margin-left: -1vw;
 	margin-top: 5px;
-	width: 300px;
+	width: 2800px;
 	list-style: none;
 }
 #user{
@@ -237,7 +237,7 @@ display: none;
 	position: absolute;
 	display: flex;
 	margin-top: -28px;
-	margin-left: 50vw;
+	margin-left: 46vw;
 	cursor: pointer;
 }
 .box_user{
@@ -461,13 +461,14 @@ a:hover{
 .btn_ss:hover{
 	background-color: rgba(233, 42, 42, 0.678);
 }
-@media (max-width:1280px){
+
+@media screen and (min-width: 1920px){
 	.menu1{
 		display: block;
 		border-color: transparent;
 		padding: 3px;
 		margin-top: -42px;
-		margin-left: 1.4vw;
+		margin-left: -17vw;
 		border-radius: 10px;
 		outline: 0;
 		cursor: pointer;
@@ -477,7 +478,7 @@ a:hover{
 		border-color: transparent;
 		padding: 3px;
 		margin-top: -55px;
-		margin-left: 1.4vw;
+		margin-left: -7vw;
 		border-radius: 10px;
 		outline: 0;
 		cursor: pointer;
@@ -489,7 +490,7 @@ a:hover{
 		display: block;
 		list-style: none;
 		margin-top: -5px;
-		margin-left: -4vw;
+		margin-left: -7vw;
 		background-color: #0a66c2;
 		position: relative;
 		width: 180px;
