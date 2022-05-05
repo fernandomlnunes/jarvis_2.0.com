@@ -481,8 +481,8 @@ a:hover{
 	display: block;
 	position: absolute;
 	margin-top: 10vw;
-	margin-left: 15vw;
-	background: red;
+	margin-left: 16vw;
+	background: gray;
 }
 .bar-ctx{
 	display: block;
