@@ -99,7 +99,7 @@ body{
 	border-color: transparent;
 	padding: 3px;
 	margin-top: -42px;
-	margin-left: -12vw;
+	margin-left: -7vw;
 	border-radius: 10px;
 	outline: 0;
 	cursor: pointer;
@@ -109,7 +109,7 @@ body{
 	border-color: transparent;
 	padding: 3px;
 	margin-top: -55px;
-	margin-left: -12vw;
+	margin-left: -7vw;
 	border-radius: 10px;
 	outline: 0;
 	cursor: pointer;
@@ -143,7 +143,7 @@ body{
 	display: block;
 	list-style: none;
 	margin-top: -5px;
-	margin-left: -17vw;
+	margin-left: -12vw;
 	background-color: #0a66c2;
 	position: relative;
 	width: 180px;
@@ -240,7 +240,6 @@ display: none;
 	margin-left: 50vw;
 	cursor: pointer;
 }
-
 .box_user{
 	position: absolute;
 	display: flex;
@@ -253,7 +252,6 @@ display: none;
 	border-radius: 3px;
 	background-color: none;
 }
-
 #btn_cad_user{
 	position: absolute;
 	display: flex;
@@ -463,70 +461,13 @@ a:hover{
 .btn_ss:hover{
 	background-color: rgba(233, 42, 42, 0.678);
 }
-.info{
-	display: flex;
-	position: absolute;
-	margin-top: 5vw;
-	margin-left: 23vw;
-}
-.bloco{
-	margin: 0px 10px;
-	padding: 0px 10px;
-	border: 4px solid #4b94dd;
-	border-radius: 10px;
-}
-.txt_bloco{
-	color: #4b94dd;
-	font-weight: bold;
-}
-.main_gr{
-	display: block;
-	position: absolute;
-	margin-top: 10vw;
-	margin-left: 15vw;
-}
-
-.bar-ctx{
-	display: block;
-	position: absolute;
-	width: 370px;
-	margin-top: 10%;
-	margin-left: 0%;
-}
-.bar_1_ctx{
-	width: 370px;
-	margin-top: 10%;
-	margin-left: 50%;
-}
-.line-ctx{
-	width: 800px;
-	height: 100px;
-	margin-top: 10%;
-	margin-left: 0%;
-}
-.circulo-ctx{
-	display: block;
-	position: absolute;
-	width: 350px;
-	height: 100px;
-	margin-top: -15%;
-	margin-left: 97%;
-}
-.radar-ctx{
-	display: block;
-	position: absolute;
-	width: 350px;
-	height: 100px;
-	margin-top: -60%;
-	margin-left: 97%;
-}
 @media (max-width:1280px){
 	.menu1{
 		display: block;
 		border-color: transparent;
 		padding: 3px;
 		margin-top: -42px;
-		margin-left: 2.7vw;
+		margin-left: 1.5vw;
 		border-radius: 10px;
 		outline: 0;
 		cursor: pointer;
@@ -536,7 +477,7 @@ a:hover{
 		border-color: transparent;
 		padding: 3px;
 		margin-top: -55px;
-		margin-left: 2.7vw;
+		margin-left: 1.5vw;
 		border-radius: 10px;
 		outline: 0;
 		cursor: pointer;
@@ -548,13 +489,13 @@ a:hover{
 		display: block;
 		list-style: none;
 		margin-top: -5px;
-		margin-left: -.5vw;
+		margin-left: -4vw;
 		background-color: #0a66c2;
 		position: relative;
 		width: 180px;
 	}
 	.pesquisa{
-		margin-left: 37%;
+		margin-left: 34%;
 		width: 420px;
 		height: 30px;
 		background-color: transparent;
@@ -572,16 +513,22 @@ a:hover{
 		display: flex;
 		list-style: none;
 		position: fixed;
-		margin-left: 80%;
+		margin-left: 71.5%;
 		top: -2px;
 		font-size: 14pt;
+		color: rgb(56, 56, 56);
+	}
+	.sair{
+		margin-top:-3px;
+		margin-left: 8px;
+		cursor: pointer;
 		color: rgb(56, 56, 56);
 	}
 	#btn_sair{
 		display: flex;
 		list-style: none;
 		position: fixed;
-		margin-left: 94%;
+		margin-left: 84%;
 		top: -12px;
 		font-size: 12pt;
 		padding: 6px;
@@ -589,62 +536,5 @@ a:hover{
 		border: none;
 		cursor: pointer;
 		color: rgb(56, 56, 56)	;
-	}
-	.info{
-		display: flex;
-		position: absolute;
-		margin-top: 5vw;
-		margin-left: 23vw;
-	}
-	.bloco{
-		margin: 0px 8px;
-		padding: 0px 8px;
-		border: 4px solid #4b94dd;
-		border-radius: 10px;
-	}
-	.txt_bloco{
-		color: #4b94dd;
-		font-weight: bold;
-	}
-	.main_gr{
-		display: block;
-		position: absolute;
-		margin-top: 10vw;
-		margin-left: 15vw;
-	}
-	
-	.bar-ctx{
-		display: block;
-		position: absolute;
-		width: 340px;
-		margin-top: 10%;
-		margin-left: 0%;
-	}
-	.bar_1_ctx{
-		width: 340px;
-		margin-top: 10%;
-		margin-left: 50%;
-	}
-	.line-ctx{
-		width: 600px;
-		height: 100px;
-		margin-top: 12%;
-		margin-left: 0%;
-	}
-	.circulo-ctx{
-		display: block;
-		position: absolute;
-		width: 320px;
-		height: 100px;
-		margin-top: -20.5%;
-		margin-left: 115%;
-	}
-	.radar-ctx{
-		display: block;
-		position: absolute;
-		width: 320px;
-		height: 100px;
-		margin-top: -74%;
-		margin-left: 115%;
 	}
 }
