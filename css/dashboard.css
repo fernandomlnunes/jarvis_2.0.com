@@ -483,22 +483,22 @@ a:hover{
 	margin-top: 10vw;
 	margin-left: 18vw;
 	padding-left: 5px;
-	background: red;
+	background: green;
 }
 .bar-ctx{
 	display: block;
 	position: absolute;
-	width: 370px;
+	width: 340px;
 	margin-top: 10%;
 	margin-left: 0%;
 }
 .bar_1_ctx{
-	width: 370px;
+	width: 340px;
 	margin-top: 10%;
 	margin-left: 50%;
 }
 .line-ctx{
-	width: 800px;
+	width: 600px;
 	height: 100px;
 	margin-top: 10%;
 	margin-left: 0%;
@@ -506,18 +506,18 @@ a:hover{
 .circulo-ctx{
 	display: block;
 	position: absolute;
-	width: 350px;
+	width: 320px;
 	height: 100px;
 	margin-top: -15%;
-	margin-left: 97%;
+	margin-left: 115%;
 }
 .radar-ctx{
 	display: block;
 	position: absolute;
-	width: 350px;
+	width: 320px;
 	height: 100px;
-	margin-top: -60%;
-	margin-left: 97%;
+	margin-top: -70%;
+	margin-left: 115%;
 }
 @media (max-width:1280px){
 	.menu1{
