@@ -467,7 +467,7 @@ a:hover{
 		border-color: transparent;
 		padding: 3px;
 		margin-top: -42px;
-		margin-left: 1.5vw;
+		margin-left: -9vw;
 		border-radius: 10px;
 		outline: 0;
 		cursor: pointer;
@@ -477,7 +477,7 @@ a:hover{
 		border-color: transparent;
 		padding: 3px;
 		margin-top: -55px;
-		margin-left: 1.5vw;
+		margin-left: -9vw;
 		border-radius: 10px;
 		outline: 0;
 		cursor: pointer;
@@ -489,10 +489,10 @@ a:hover{
 		display: block;
 		list-style: none;
 		margin-top: -5px;
-		margin-left: -4vw;
+		margin-left: -14vw;
 		background-color: #0a66c2;
 		position: relative;
-		width: 180px;
+		width: 2200px;
 	}
 	.pesquisa{
 		margin-left: 34%;
@@ -513,7 +513,7 @@ a:hover{
 		display: flex;
 		list-style: none;
 		position: fixed;
-		margin-left: 71.5%;
+		margin-left: 72%;
 		top: -2px;
 		font-size: 14pt;
 		color: rgb(56, 56, 56);
