@@ -501,7 +501,7 @@ a:hover{
 .line-ctx{
 	width: 800px;
 	height: 100px;
-	margin-top: 2%;
+	margin-top: 10%;
 	margin-left: 0%;
 }
 .circulo-ctx{
@@ -509,7 +509,7 @@ a:hover{
 	position: absolute;
 	width: 350px;
 	height: 100px;
-	margin-top: -15.5%;
+	margin-top: -15%;
 	margin-left: 97%;
 }
 .radar-ctx{
@@ -517,6 +517,6 @@ a:hover{
 	position: absolute;
 	width: 350px;
 	height: 100px;
-	margin-top: -55%;
+	margin-top: -60%;
 	margin-left: 97%;
 }
