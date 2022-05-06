@@ -519,9 +519,6 @@ a:hover{
 	margin-left: 115%;
 }
 @media screen and (max-width: 3840px){
-	body{
-		background-color: blue;
-	}
 	.menu1{
 		margin-top: -42px;
 		margin-left: -29vw;
