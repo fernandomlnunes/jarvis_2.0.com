@@ -522,7 +522,7 @@ a:hover{
 }
 @media screen and (max-width: 1360px){
 	body{
-		background-color: purple;
+		background-color: black;
 	}
 	#logado{
 		margin-left: 74%;
@@ -538,15 +538,15 @@ a:hover{
 	}
 	.menu1{
 		margin-top: -42px;
-		margin-left: -10vw;
+		margin-left: -5vw;
 	}
 	.menu2{
 		margin-top: -55px;
-		margin-left: -10vw;
+		margin-left: -5vw;
 	}
 	.m_lat{
 		margin-top: -5px;
-		margin-left: -15vw;
+		margin-left: -10vw;
 	}
 	.main-home{
 		margin-top: 5%;
