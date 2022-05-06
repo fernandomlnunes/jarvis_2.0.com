@@ -3,6 +3,7 @@
 body{
     background-image: linear-gradient(75deg, rgb(19, 19, 194), violet);
     font-family: 'Roboto';
+    width: 100%;
 }
 
 .continer_principal{
