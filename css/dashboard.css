@@ -594,15 +594,15 @@ a:hover{
 	}
 	.menu1{
 		margin-top: -42px;
-		margin-left: -6vw;
+		margin-left: -3vw;
 	}
 	.menu2{
 		margin-top: -55px;
-		margin-left: -6vw;
+		margin-left: -3vw;
 	}
 	.m_lat{
 		margin-top: -5px;
-		margin-left: -11vw;
+		margin-left: -9vw;
 	}
 	.main-home{
 		margin-top: 5%;
@@ -637,7 +637,7 @@ a:hover{
 	}
 	.menu1{
 		margin-top: -42px;
-		margin-left: -4vw;
+		margin-left: -7vw;
 	}
 	.menu2{
 		margin-top: -55px;
@@ -645,11 +645,14 @@ a:hover{
 	}
 	.m_lat{
 		margin-top: -5px;
-		margin-left: -9vw;
+		margin-left: -11vw;
 	}
 	.main-home{
 		margin-top: 5%;
 		margin-left: -23%;
+	}
+	.main_gr{
+		margin-left: 17vw;
 	}
 	main{
 		margin-left: 17vw;
