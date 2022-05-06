@@ -462,9 +462,6 @@ a:hover{
 	background-color: rgba(233, 42, 42, 0.678);
 }
 @media screen and (max-width: 3840px){
-	body{
-		background-color: blue;
-	}
 	.menu1{
 		margin-top: -42px;
 		margin-left: -29vw;
@@ -484,9 +481,6 @@ a:hover{
 
 }
 @media screen and (max-width: 1920px){
-	body{
-		background-color: red;
-	}
 	#logado{
 		margin-left: 74%;
 		top: -2px;
@@ -521,9 +515,6 @@ a:hover{
 	}
 }
 @media screen and (max-width: 1360px){
-	body{
-		background-color: black;
-	}
 	#logado{
 		margin-left: 74%;
 		top: -2px;
@@ -558,9 +549,6 @@ a:hover{
 	}
 }
 @media screen and (max-width: 1280px){
-	body{
-		background-color: green;
-	}
 	#logado{
 		margin-left: 76%;
 		top: -2px;
@@ -598,9 +586,6 @@ a:hover{
 	}
 }
 @media screen and (max-width: 1080px){
-	body{
-		background-color: orangered;
-	}
 	#logado{
 		margin-left: 74%;
 		top: -2px;
@@ -645,9 +630,6 @@ a:hover{
 	}
 }
 @media screen and (max-width: 1024px){
-	body{
-		background-color: gray;
-	}
 	#logado{
 		margin-left: 76%;
 		top: -2px;
@@ -686,9 +668,6 @@ a:hover{
 	}
 }
 @media screen and (max-width: 720px){
-	body{
-		background-color: yellow;
-	}
 	#logado{
 		margin-left: 65%;
 		top: -2px;
