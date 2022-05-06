@@ -522,7 +522,7 @@ a:hover{
 }
 @media screen and (max-width: 1360px){
 	body{
-		background: black;
+		background: yellow;
 	}
 	#logado{
 		margin-left: 74%;
