@@ -488,6 +488,9 @@ a:hover{
 	#cadastrarCliente{
 		margin-left: 59.3vw;
 	}
+	#cadastrarStatus{
+		margin-left: 88.8vw;
+	}
 	#btn_sair{
 		margin-left: 94%;
 		top: -12px;
@@ -518,6 +521,9 @@ a:hover{
 	}
 }
 @media screen and (max-width: 1360px){
+	body{
+		background: black;
+	}
 	#logado{
 		margin-left: 74%;
 		top: -2px;
@@ -525,6 +531,12 @@ a:hover{
 	#btn_sair{
 		margin-left: 94%;
 		top: -12px;
+	}
+	#cadastrarCliente{
+		margin-left: 57.8vw;
+	}
+	#cadastrarStatus{
+		margin-left: 87.5vw;
 	}
 	.home_1{
 		margin-top: -28px;
