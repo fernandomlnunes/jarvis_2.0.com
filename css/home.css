@@ -538,7 +538,9 @@ a:hover{
 	#cadastrarCliente{
 		margin-left: 57.8vw;
 	}
-
+	#cadastrarStatus{
+		margin-left: 87.5%;
+	}
 	.home_1{
 		margin-top: -28px;
 		margin-left: 50vw;
