@@ -488,6 +488,12 @@ a:hover{
 	#cadastrarCliente{
 		margin-left: 59.3vw;
 	}
+	#cadastrarCliente{
+		margin-left: 59.3vw;
+	}
+	#cadastrarStatus{
+		margin-left: 88.8%;
+	}
 	#btn_sair{
 		margin-left: 94%;
 		top: -12px;
@@ -532,9 +538,7 @@ a:hover{
 	#cadastrarCliente{
 		margin-left: 57.8vw;
 	}
-	#cadastrarStatus{
-		margin-left: 87.5vw;
-	}
+
 	.home_1{
 		margin-top: -28px;
 		margin-left: 50vw;
