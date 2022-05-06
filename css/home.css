@@ -485,7 +485,7 @@ a:hover{
 }
 @media screen and (max-width: 1920px){
 	body{
-		background-color: pink;
+		background-color: red;
 	}
 	#logado{
 		margin-left: 74%;
@@ -522,16 +522,39 @@ a:hover{
 }
 @media screen and (max-width: 1360px){
 	body{
-		background-color: black;
+		background-color: purple;
+	}
+	#logado{
+		margin-left: 74%;
+		top: -2px;
+	}
+	#btn_sair{
+		margin-left: 94%;
+		top: -12px;
+	}
+	.home_1{
+		margin-top: -28px;
+		margin-left: 50vw;
+	}
+	.menu1{
+		margin-top: -42px;
+		margin-left: -10vw;
+	}
+	.menu2{
+		margin-top: -55px;
+		margin-left: -10vw;
+	}
+	.m_lat{
+		margin-top: -5px;
+		margin-left: -15vw;
 	}
 	.main-home{
-		align-items: center;
-		text-align: center;
-		margin-top: 6%;
-		margin-left: -32%;
-		font-size: 58px;
-		font-weight: bold;
-		color: white;
+		margin-top: 5%;
+		margin-left: -25%;
+	}
+	.down{
+		margin-top: -22px;
+		margin-left: 8vw;
 	}
 }
 @media screen and (max-width: 1280px){
