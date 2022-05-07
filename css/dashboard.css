@@ -611,11 +611,8 @@ a:hover{
 	}
 }
 @media screen and (max-width: 1280px){
-	body{
-		background-color: orangered;
-	}
 	#logado{
-		margin-left: 76%;
+		margin-left: 68%;
 		top: -2px;
 	}
 	.pesquisa{
