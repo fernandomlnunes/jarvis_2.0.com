@@ -580,6 +580,9 @@ a:hover{
 	#cadastrarStatus{
 		margin-left: 86.5%;
 	}
+	#cadastrarCliente1{
+		margin-left: 62.7vw;
+	}
 	#btn_sair{
 		margin-left: 93%;
 		top: -12px;
@@ -590,15 +593,15 @@ a:hover{
 	}
 	.menu1{
 		margin-top: -42px;
-		margin-left: 4vw;
+		margin-left: 0.5vw;
 	}
 	.menu2{
 		margin-top: -55px;
-		margin-left: 4vw;
+		margin-left: 0.5vw;
 	}
 	.m_lat{
 		margin-top: -5px;
-		margin-left: -1vw;
+		margin-left: -5vw;
 	}
 	.main-home{
 		margin-top: 5%;
