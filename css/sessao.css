@@ -461,80 +461,287 @@ a:hover{
 .btn_ss:hover{
 	background-color: rgba(233, 42, 42, 0.678);
 }
-@media (max-width:1280px){
+@media screen and (max-width: 3840px){
 	.menu1{
-		display: block;
-		border-color: transparent;
-		padding: 3px;
 		margin-top: -42px;
-		margin-left: -9vw;
-		border-radius: 10px;
-		outline: 0;
-		cursor: pointer;
+		margin-left: -29vw;
 	}
 	.menu2{
-		display: block;
-		border-color: transparent;
-		padding: 3px;
 		margin-top: -55px;
-		margin-left: -9vw;
-		border-radius: 10px;
-		outline: 0;
-		cursor: pointer;
+		margin-left: -29vw;
 	}
 	.m_lat{
-		height: 2000%;
-		align-items: center;
-		padding: 10px 25px;
-		display: block;
-		list-style: none;
+		margin-top: -5px;
+		margin-left: -33.5vw;
+	}
+	.down{
+		margin-top: -22px;
+		margin-left: 5.5vw;
+	}
+
+}
+@media screen and (max-width: 1920px){
+	#logado{
+		margin-left: 74%;
+		top: -2px;
+	}
+	#cadastrarCliente{
+		margin-left: 59.3vw;
+	}
+	#cadastrarCliente{
+		margin-left: 59.3vw;
+	}
+	#cadastrarStatus{
+		margin-left: 88.8%;
+	}
+	#btn_sair{
+		margin-left: 94%;
+		top: -12px;
+	}
+	.home_1{
+		margin-top: -28px;
+		margin-left: 50vw;
+	}
+	.menu1{
+		margin-top: -42px;
+		margin-left: -9vw;
+	}
+	.menu2{
+		margin-top: -55px;
+		margin-left: -9vw;
+	}
+	.m_lat{
 		margin-top: -5px;
 		margin-left: -14vw;
-		background-color: #0a66c2;
-		position: relative;
-		width: 2200px;
+	}
+	.main-home{
+		margin-top: 5%;
+		margin-left: -25%;
+	}
+	.down{
+		margin-top: -22px;
+		margin-left: 8vw;
+	}
+}
+@media screen and (max-width: 1360px){
+	#logado{
+		margin-left: 74%;
+		top: -2px;
+	}
+	#btn_sair{
+		margin-left: 94%;
+		top: -12px;
+	}
+	#cadastrarCliente{
+		margin-left: 57.8vw;
+	}
+	#cadastrarStatus{
+		margin-left: 87.5%;
+	}
+	.home_1{
+		margin-top: -28px;
+		margin-left: 50vw;
+	}
+	.menu1{
+		margin-top: -42px;
+		margin-left: -5vw;
+	}
+	.menu2{
+		margin-top: -55px;
+		margin-left: -5vw;
+	}
+	.m_lat{
+		margin-top: -5px;
+		margin-left: -10vw;
+	}
+	.main-home{
+		margin-top: 5%;
+		margin-left: -25%;
+	}
+	.down{
+		margin-top: -22px;
+		margin-left: 8vw;
+	}
+}
+@media screen and (max-width: 1280px){
+	#logado{
+		margin-left: 68%;
+		top: -2px;
 	}
 	.pesquisa{
+		margin-top: 28px;
+		margin-left: 34%;
+		width: 320px;
+		height: 30px;
+	}
+	#cadastrarCliente{
+		margin-left: 57.1vw;
+	}
+	#cadastrarStatus{
+		margin-left: 86.5%;
+	}
+	#btn_sair{
+		margin-left: 93%;
+		top: -12px;
+	}
+	.home_1{
+		margin-top: -28px;
+		margin-left: 56vw;
+	}
+	.menu1{
+		margin-top: -42px;
+		margin-left: 4vw;
+	}
+	.menu2{
+		margin-top: -55px;
+		margin-left: 4vw;
+	}
+	.m_lat{
+		margin-top: -5px;
+		margin-left: -1vw;
+	}
+	.main-home{
+		margin-top: 5%;
+		margin-left: -25%;
+	}
+	main{
+		margin-left: 20.5vw;
+	}
+	.down{
+		margin-top: -22px;
+		margin-left: 9vw;
+	}
+}
+@media screen and (max-width: 1080px){
+	#logado{
+		margin-left: 74%;
+		top: -2px;
+	}
+	#btn_sair{
+		margin-left: 93%;
+		top: -12px;
+	}
+	.home_1{
+		margin-top: -28px;
+		margin-left: 56vw;
+	}
+	.menu1{
+		margin-top: -42px;
+		margin-left: 11vw;
+	}
+	.menu2{
+		margin-top: -55px;
+		margin-left: 11vw;
+	}
+	.m_lat{
+		margin-top: -5px;
+		margin-left: 6vw;
+		width: 190px;
+	}
+	.main-home{
+		margin-top: 5%;
+		margin-left: -25%;
+	}
+	main{
+		margin-left: 18vw;
+	}
+	.down{
+		margin-top: -22px;
+		margin-left: 9vw;
+	}
+	.pesquisa{
+		margin-top: 28px;
 		margin-left: 34%;
 		width: 420px;
 		height: 30px;
-		background-color: transparent;
-		border: 0;
-		color: gray;
 	}
-	.home_1{
-		position: absolute;
-		display: flex;
-		margin-top: -28px;
-		margin-left: 53vw;
-		cursor: pointer;
-	}
+}
+@media screen and (max-width: 1024px){
 	#logado{
-		display: flex;
-		list-style: none;
-		position: fixed;
-		margin-left: 72%;
+		margin-left: 76%;
 		top: -2px;
-		font-size: 14pt;
-		color: rgb(56, 56, 56);
-	}
-	.sair{
-		margin-top:-3px;
-		margin-left: 8px;
-		cursor: pointer;
-		color: rgb(56, 56, 56);
 	}
 	#btn_sair{
-		display: flex;
-		list-style: none;
-		position: fixed;
-		margin-left: 84%;
+		margin-left: 92%;
 		top: -12px;
-		font-size: 12pt;
-		padding: 6px;
-		background: none;
-		border: none;
-		cursor: pointer;
-		color: rgb(56, 56, 56)	;
+	}
+	.home_1{
+		margin-top: -28px;
+		margin-left: 56vw;
+	}
+	.menu1{
+		margin-top: -42px;
+		margin-left: 13vw;
+	}
+	.menu2{
+		margin-top: -55px;
+		margin-left: 13vw;
+	}
+	.m_lat{
+		margin-top: -5px;
+		margin-left: 8vw;
+		width: 190px;
+	}
+	.main-home{
+		margin-top: 5%;
+		margin-left: -25%;
+	}
+	main{
+		margin-left: 18.5vw;
+	}
+	.down{
+		margin-top: -20px;
+		margin-left: 10vw;
+	}
+}
+@media screen and (max-width: 720px){
+	#logado{
+		margin-left: 65%;
+		top: -2px;
+	}
+	#btn_sair{
+		margin-left: 81%;
+		top: -12px;
+	}
+	.home_1{
+		margin-top: -28px;
+		margin-left: 47vw;
+	}
+	.menu1{
+		margin-top: -42px;
+		margin-left: 27vw;
+	}
+	.menu2{
+		margin-top: -55px;
+		margin-left: 27vw;
+	}
+	.m_lat{
+		margin-top: -5px;
+		margin-left: 21vw;
+		width: 180px;
+	}
+	.main-home{
+		margin-top: 5%;
+		margin-left: -25%;
+	}
+	main{
+		margin-left: 32vw;
+		width: 50%;
+	}
+	.down{
+		margin-top: -20px;
+		margin-left: 12vw;
+	}
+	.pesquisa{
+		margin-top: 28px;
+		margin-left: 36%;
+		width: 210px;
+		height: 30px;
+	}
+	#pesq{
+		width: 220px;
+	}
+	.lupa{
+		margin-left: 27vw;
 	}
 }
