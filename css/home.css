@@ -524,9 +524,6 @@ a:hover{
 	}
 }
 @media screen and (max-width: 1360px){
-	body{
-		background: yellow;
-	}
 	#logado{
 		margin-left: 74%;
 		top: -2px;
@@ -568,8 +565,20 @@ a:hover{
 }
 @media screen and (max-width: 1280px){
 	#logado{
-		margin-left: 76%;
+		margin-left: 68%;
 		top: -2px;
+	}
+	.pesquisa{
+		margin-top: 28px;
+		margin-left: 34%;
+		width: 320px;
+		height: 30px;
+	}
+	#cadastrarCliente{
+		margin-left: 57.1vw;
+	}
+	#cadastrarStatus{
+		margin-left: 86.8%;
 	}
 	#btn_sair{
 		margin-left: 93%;
@@ -577,19 +586,19 @@ a:hover{
 	}
 	.home_1{
 		margin-top: -28px;
-		margin-left: 49vw;
+		margin-left: 56vw;
 	}
 	.menu1{
 		margin-top: -42px;
-		margin-left: -4vw;
+		margin-left: 4vw;
 	}
 	.menu2{
 		margin-top: -55px;
-		margin-left: -4vw;
+		margin-left: 4vw;
 	}
 	.m_lat{
 		margin-top: -5px;
-		margin-left: -9vw;
+		margin-left: -1vw;
 	}
 	.main-home{
 		margin-top: 5%;
