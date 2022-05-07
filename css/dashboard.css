@@ -612,10 +612,10 @@ a:hover{
 }
 @media screen and (max-width: 1280px){
 	body{
-		background-color: orangered;
+		background-color: red;
 	}
 	#logado{
-		margin-left: 68%;
+		margin-left: 76%;
 		top: -2px;
 	}
 	.pesquisa{
@@ -630,19 +630,19 @@ a:hover{
 	}
 	.home_1{
 		margin-top: -28px;
-		margin-left: 56vw;
+		margin-left: 49vw;
 	}
 	.menu1{
 		margin-top: -42px;
-		margin-left: 4vw;
+		margin-left: -7vw;
 	}
 	.menu2{
 		margin-top: -55px;
-		margin-left: 4vw;
+		margin-left: -4vw;
 	}
 	.m_lat{
 		margin-top: -5px;
-		margin-left: -1vw;
+		margin-left: -11vw;
 	}
 	.main-home{
 		margin-top: 5%;
