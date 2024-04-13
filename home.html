@@ -6,6 +6,17 @@
     <link rel="stylesheet" href="css/home.css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>jarvis_2.0</title>
+
+    <style>
+  #password {
+    font-size: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 300px;
+    margin: 0 auto;
+  }
+    </style>
+
 </head>
 
 <body>
@@ -49,6 +60,14 @@
         <h1 id="logado"></h1>
         <main class="main-home">
             Olá, Maria
+            
+            
+            <h1>Gerar Senha</h1>
+            <button onclick="generatePassword()">Gerar Senha</button>
+            <input type="text" id="password" readonly>
+            
+
+
         </main>
     </div>
     <Script src="js/javasctipt.js"></Script>
