@@ -207,6 +207,8 @@ function sair(){
     window.location.href = 'index.html'
 }
 
+
+//excluir essa informação abaixo
 // URL da API pública
 const apiUrl = 'https://api.exemplo.com/dados';
 
