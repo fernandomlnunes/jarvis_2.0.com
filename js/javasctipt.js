@@ -207,33 +207,27 @@ function sair(){
     window.location.href = 'index.html'
 }
 
-
+/** */
 //excluir essa informação abaixo
 // URL da API pública
+// Chama a função para consumir a API quando necessário
 const apiUrl = 'https://api.exemplo.com/dados';
 
-// Função para fazer a requisição e lidar com a resposta
-function consumirAPI() {
-    // Faz a requisição para a API
+function consumirAPI(){
     fetch(apiUrl)
-        .then(response => {
-            // Verifica se a requisição foi bem-sucedida
+        .then(response.ok => {
             if (!response.ok) {
-                throw new Error('Não foi possível obter os dados da API');
+                throw new Error('Errado');
             }
-            // Converte a resposta para JSON
             return response.json();
-        })
-        .then(data => {
-            // Manipula os dados recebidos
-            console.log('Dados da API:', data);
-            // Faça o que quiser com os dados aqui
-        })
-        .catch(error => {
-            // Trata erros de requisição
-            console.error('Erro ao consumir a API:', error);
-        });
+            })
+            .then(data => {
+                console.log('dados da API', data);
+            })
+            .catch(error => {
+                console.error('Erro consumir API', error);
+            });
+
 }
 
-// Chama a função para consumir a API quando necessário
 consumirAPI();
