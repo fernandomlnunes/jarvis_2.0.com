@@ -209,25 +209,4 @@ function sair(){
 
 /** */
 //excluir essa informação abaixo
-// URL da API pública
-// Chama a função para consumir a API quando necessário
-const apiUrl = 'https://api.exemplo.com/dados';
 
-function consumirAPI(){
-    fetch(apiUrl)
-        .then(response.ok => {
-            if (!response.ok) {
-                throw new Error('Errado');
-            }
-            return response.json();
-            })
-            .then(data => {
-                console.log('dados da API', data);
-            })
-            .catch(error => {
-                console.error('Erro consumir API', error);
-            });
-
-}
-
-consumirAPI();
