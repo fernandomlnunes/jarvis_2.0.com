@@ -206,3 +206,32 @@ function sair(){
     localStorage.removeItem('userLogado')
     window.location.href = 'index.html'
 }
+
+// URL da API pública
+const apiUrl = 'https://api.exemplo.com/dados';
+
+// Função para fazer a requisição e lidar com a resposta
+function consumirAPI() {
+    // Faz a requisição para a API
+    fetch(apiUrl)
+        .then(response => {
+            // Verifica se a requisição foi bem-sucedida
+            if (!response.ok) {
+                throw new Error('Não foi possível obter os dados da API');
+            }
+            // Converte a resposta para JSON
+            return response.json();
+        })
+        .then(data => {
+            // Manipula os dados recebidos
+            console.log('Dados da API:', data);
+            // Faça o que quiser com os dados aqui
+        })
+        .catch(error => {
+            // Trata erros de requisição
+            console.error('Erro ao consumir a API:', error);
+        });
+}
+
+// Chama a função para consumir a API quando necessário
+consumirAPI();
