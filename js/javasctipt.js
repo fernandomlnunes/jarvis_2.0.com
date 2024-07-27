@@ -208,7 +208,6 @@ function sair(){
 }
 
 /** */
-//excluir essa informação abaixo
 function generatePassword(){
     var length = 12;
     var charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()_+~`|}{[]\:;?><,./-=";
