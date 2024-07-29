@@ -35,15 +35,15 @@ main{
 
 #verSenha{
     position: absolute;
-    top: 440px;
-    left: 1020px;
+    top: 468px;
+    left: 990px;
     width: 50px;
     cursor: pointer;
 }
 #verConfSenha{
     position: absolute;
-    top: 501px;
-    left: 1020px;
+    top: 531px;
+    left: 990px;
     width: 50px;
     cursor: pointer;
 }
@@ -61,5 +61,145 @@ main{
         margin: 20px 0 0 0;
         width:100%;
         box-shadow: none;
+    }
+}
+
+@media (min-width:1024px){
+    #cadastrarCliente{
+        background-color: green;
+    }
+    #verSenha{
+        position: absolute;
+        top: 465px;
+        left: 682px;
+        width: 50px;
+        cursor: pointer;
+    }
+    #verConfSenha{
+        position: absolute;
+        top: 526px;
+        left: 682px;
+        width: 50px;
+        cursor: pointer;
+    }
+}
+
+@media (min-width:1280px){
+    #cadastrarCliente{
+        background-color: red;
+    }
+    #verSenha{
+        position: absolute;
+        top: 464px;
+        left: 860px;
+        width: 50px;
+        cursor: pointer;
+    }
+    #verConfSenha{
+        position: absolute;
+        top: 525px;
+        left: 860px;
+        width: 50px;
+        cursor: pointer;
+    }
+}
+
+@media (min-width:1366px){
+    #cadastrarCliente{
+        background-color: burlywood;
+    }
+    #verSenha{
+        position: absolute;
+        top: 467px;
+        left: 920px;
+        width: 50px;
+        cursor: pointer;
+    }
+    #verConfSenha{
+        position: absolute;
+        top: 531px;
+        left: 920px;
+        width: 50px;
+        cursor: pointer;
+    }
+}
+
+@media (min-width:1440px){
+    #cadastrarCliente{
+        background-color: blue;
+    }
+    #verSenha{
+        position: absolute;
+        top: 467px;
+        left: 972px;
+        width: 50px;
+        cursor: pointer;
+    }
+    #verConfSenha{
+        position: absolute;
+        top: 531px;
+        left: 972px;
+        width: 50px;
+        cursor: pointer;
+    }
+}
+
+@media (min-width:1600px){
+    #cadastrarCliente{
+        background-color: blueviolet;
+    }
+    #verSenha{
+        position: absolute;
+        top: 467px;
+        left: 1085px;
+        width: 50px;
+        cursor: pointer;
+    }
+    #verConfSenha{
+        position: absolute;
+        top: 531px;
+        left: 1085px;
+        width: 50px;
+        cursor: pointer;
+    }
+}
+
+@media (min-width:1680px){
+    #cadastrarCliente{
+        background-color: goldenrod;
+    }
+    #verSenha{
+        position: absolute;
+        top: 467px;
+        left: 1140px;
+        width: 50px;
+        cursor: pointer;
+    }
+    #verConfSenha{
+        position: absolute;
+        top: 531px;
+        left: 1140px;
+        width: 50px;
+        cursor: pointer;
+    }
+}
+
+@media (min-width:1920px){
+    #cadastrarCliente{
+        background-color: yellow;
+    }
+    #verSenha{
+        position: absolute;
+        top: 467px;
+        left: 1308px;
+        width: 50px;
+        cursor: pointer;
+    }
+    #verConfSenha{
+        position: absolute;
+        top: 531px;
+        left: 1308px;
+        width: 50px;
+        cursor: pointer;
     }
 }
