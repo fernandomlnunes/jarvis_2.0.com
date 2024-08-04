@@ -7,9 +7,9 @@
 
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/button.css">
-    <link rel="stylesheet" href="css/records-status.css">
-    <link rel="stylesheet" href="css/modal-status.css">
-
+    <link rel="stylesheet" href="css/records.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/buscacep.css"/>
     <link rel="stylesheet" href="css/home.css"/>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
    
@@ -37,13 +37,14 @@
                 <ul class="m_lat"> 
                     <input type="checkbox" id="check1">
                     <label class="labelCheck1" for="check1">Usuário</label>
-                    <img class="down" src="img/down_1.png">
+                    <!-- <img class="down" src="img/down_1.png"> -->
                 <div class="user1">
                     <ul id="user">
                         <li><a href="usuarios.html">usuário</a></li>
                         <li><a href="sessao_user.html">sessão de usuário</a></li>
                     </ul>
                 </div>
+
                 <li><a href="status.html">Status</a></li>
                 <li><a href="dashboard.html" class="servicos">Dashboard</a></li>
                 <li><a href="#" class="portifolio">Empresas</a></li>	
@@ -56,39 +57,44 @@
             <img class="sair" src="img/sair_2.png">
         </button>  
     </div>
-    <main>
-        <button type="button" class="button blue mobile" id="cadastrarStatus">Novo Status</button>
-        <table id="tableClient" class="records">
-            <thead class="title-status">
-                <tr>
-                    <th>Status</th>
-                    <th>Editar</th>
-                </tr>
-            </thead>
-            <tbody class="tbody-st">
-
-            </tbody>
-        </table>
-        <div class="modal" id="modal">
-            <div class="modal-content">
-                <header class="modal-header">
-                    <h2>Novo Status</h2>
-                    <span class="modal-close" id="modalClose">&#10006;</span>
-                </header>
-                <form id="form" class="modal-form">
-                    <input type="text" id="nome" data-index="new" class="modal-field" placeholder="Novo status" required>
-
-                    
-                </form>
-                <footer id="modal-footer" class="modal-footer">
-                    <button id="salvar" class="button green">Salvar</button>
-                    <button id="cancelar" class="button blue">Cancelar</button>
-                </footer>
+        <main class="buscacep_main">
+            <h1 class="title">Consulta CEP</h1>
+    
+            <div class="row">
+                <div class="inputbox">
+                    <input type="text" id="cep" required>
+                    <label for="cep">CEP</label>
+                </div>
+                <div class="inputbox">
+                    <input type="text" id="endereco" required>
+                    <label for="endereco">Endereço</label>
+                </div>
+                <div class="inputbox">
+                    <input type="text" id="numero" required>
+                    <label for="numero">Número</label>
+                </div>
             </div>
-        </div>
-    </main>
+            <div class="row">
+                <div class="inputbox">
+                    <input type="text" id="bairro" required>
+                    <label for="bairro">Bairro</label>
+                </div>
+                <div class="inputbox">
+                    <input type="text" id="cidade" required>
+                    <label for="cidade">Cidade</label>
+                </div>
+                <div class="inputbox">
+                    <input type="text" id="estado" required>
+                    <label for="estado">Estado</label>
+                </div>
+            </div>
+            <div class="row">
+                <button>Consultar</button>
+            </div>
+        </main>
     <Script src="js/javasctipt.js"></Script>
-    <script src="js/main-status.js"></script>
+    <Script src="js/buscacep.js"></Script>
+    <script src="js/main.js"></script>
     <script src="js/see.js"></script>
     <script>
         
