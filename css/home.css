@@ -22,15 +22,6 @@ body{
 	height: 70px;
 	z-index: 1;
 }
-#logado{
-	display: flex;
-	list-style: none;
-	position: fixed;
-	margin-left: 74%;
-	top: -2px;
-	font-size: 14pt;
-	color: rgb(56, 56, 56);
-}
 #btn_sair{
 	display: flex;
 	list-style: none;
@@ -208,23 +199,6 @@ body{
     font-size: 13px;
     margin-top: 0;
 }
-button{
-    background-color: transparent;
-    border-color: rgb(163, 163, 163);
-    color: rgb(163, 163, 163);
-    padding: 7px;
-    font-weight: bold;
-    font-size: 12pt;
-    margin-top: 20px;
-    border-radius: 4px;
-    cursor: pointer;
-    overflow: none;
-    transition: all .5s ease-out;
-}
-button:hover{
-    background-color: rgb(163, 163, 163) ;
-    color: black;
-}
 .justify-center{
     display: flex;
     justify-content: center;
@@ -348,10 +322,6 @@ a:hover{
 }
 
 	@media screen and (max-width: 1920px){
-		#logado{
-			margin-left: 74%;
-			top: -2px;
-		}
 		#cadastrarCliente{
 			margin-left: 59.3vw;
 		}
@@ -375,10 +345,6 @@ a:hover{
 		}
 	}
 	@media screen and (max-width: 1360px){
-		#logado{
-			margin-left: 74%;
-			top: -2px;
-		}
 		#btn_sair{
 			margin-left: 94%;
 			top: -12px;
@@ -399,10 +365,6 @@ a:hover{
 		}
 	}
 	@media screen and (max-width: 1280px){
-		#logado{
-			margin-left: 68%;
-			top: -2px;
-		}
 		.pesquisa{
 			margin-top: 28px;
 			margin-left: 34%;
@@ -432,10 +394,6 @@ a:hover{
 		}
 	}
 	@media screen and (max-width: 1080px){
-		#logado{
-			margin-left: 74%;
-			top: -2px;
-		}
 		#btn_sair{
 			margin-left: 93%;
 			top: -12px;
@@ -459,10 +417,6 @@ a:hover{
 		}
 	}
 	@media screen and (max-width: 1024px){
-		#logado{
-			margin-left: 76%;
-			top: -2px;
-		}
 		#btn_sair{
 			margin-left: 92%;
 			top: -12px;
@@ -480,10 +434,6 @@ a:hover{
 		}
 	}
 	@media screen and (max-width: 720px){
-		#logado{
-			margin-left: 65%;
-			top: -2px;
-		}
 		#btn_sair{
 			margin-left: 81%;
 			top: -12px;
