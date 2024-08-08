@@ -94,123 +94,8 @@ body{
 	padding: 0px 8px 0px 8px;
 	color: rgb(56, 56, 56);
 }
-.menu1{
-	display: block;
-	border-color: transparent;
-	padding: 3px;
-	margin-top: -42px;
-	margin-left: -6vw;
-	border-radius: 10px;
-	outline: 0;
-	cursor: pointer;
-}
-.menu2{
-	display: block;
-	border-color: transparent;
-	padding: 3px;
-	margin-top: -55px;
-	margin-left: -6vw;
-	border-radius: 10px;
-	outline: 0;
-	cursor: pointer;
-}
-.menu1:hover{
-	display: block;
-}
-.menu2:hover{
-	display: none;
-}
-.nav{
-	position: absolute;
-	display: block;
-	margin-top: -px;
-	margin-left: -480px;
-	height: 2000%;
-}
-#chec{
-	display: none;
-	position: absolute;
-	z-index: 2;	
-	height: 100%;
-}
-#chec:checked ~ .m_lat{
-	transform: translateX(-280px);
-}
-.m_lat{
-	height: 2000%;
-	align-items: center;
-	padding: 10px 25px;
-	display: block;
-	list-style: none;
-	margin-top: -5px;
-	margin-left: -11vw;
-	background-color: #0a66c2;
-	position: relative;
-	width: 220px;
-}
-.m_lat a{
-	display: block;
-	padding: 0.2vw 4vw;
-	color: rgb(56, 56, 56);
-	text-decoration: none;
-}
-.m_lat a:hover{
-	transition: background-color 0s;
-	color: white;
-	border-radius: 10px;
-}
-.down{
-	display: block;
-	margin-top: -22px;
-	margin-left: 8vw;
-	cursor: pointer;
-	z-index: 10;
-}
-.down2{
-	display: block;
-	margin-top: -22px;
-	margin-left: 11vw;
-	cursor: pointer;
-}
-.sub_1_lat{
-	list-style: none;
-	text-decoration: none;
-	display: none;
-    position: absolute;
-	margin-left: -35px;
-}
-.m_lat li:hover .sub_1_lat{
-    display: block;
-	position: relative;		
-    text-decoration: none;
-}
-.user1{
-	overflow: hidden;
-	max-height: 0;
-	margin-left: -1vw;
-	margin-top: 5px;
-	width: 2800px;
-	list-style: none;
-}
-#user{
-	list-style: none;
-}
-#check1{
-display: none;
-}
-.labelCheck1{
-	color: rgb(56, 56, 56);
-	margin-left: 4vw;
-	cursor: pointer;
-	font-weight: bold;
-}
-.labelCheck1:hover{
-	color: white;
-}
-#check1:checked ~ .user1 {
-	height: auto;
-	max-height: 200px;
-}
+
+
 .user2{
 	overflow: hidden;
 	max-height: 0;
@@ -461,25 +346,7 @@ a:hover{
 .btn_ss:hover{
 	background-color: rgba(233, 42, 42, 0.678);
 }
-	@media screen and (max-width: 3840px){
-		.menu1{
-			margin-top: -42px;
-			margin-left: -29vw;
-		}
-		.menu2{
-			margin-top: -55px;
-			margin-left: -29vw;
-		}
-		.m_lat{
-			margin-top: -5px;
-			margin-left: -33.5vw;
-		}
-		.down{
-			margin-top: -22px;
-			margin-left: 5.5vw;
-		}
 
-	}
 	@media screen and (max-width: 1920px){
 		#logado{
 			margin-left: 74%;
@@ -502,25 +369,9 @@ a:hover{
 			margin-top: -28px;
 			margin-left: 50vw;
 		}
-		.menu1{
-			margin-top: -42px;
-			margin-left: -15vw;
-		}
-		.menu2{
-			margin-top: -55px;
-			margin-left: -15vw;
-		}
-		.m_lat{
-			margin-top: -5px;
-			margin-left: -20vw;
-		}
 		.main-home{
 			margin-top: 5%;
 			margin-left: -25%;
-		}
-		.down{
-			margin-top: -22px;
-			margin-left: 8vw;
 		}
 	}
 	@media screen and (max-width: 1360px){
@@ -537,22 +388,6 @@ a:hover{
 		}
 		#cadastrarStatus{
 			margin-left: 87.5%;
-		}
-		.home_1{
-			margin-top: -28px;
-			margin-left: 50vw;
-		}
-		.menu1{
-			margin-top: -42px;
-			margin-left: -5vw;
-		}
-		.menu2{
-			margin-top: -55px;
-			margin-left: -5vw;
-		}
-		.m_lat{
-			margin-top: -5px;
-			margin-left: -10vw;
 		}
 		.main-home{
 			margin-top: 5%;
@@ -584,22 +419,6 @@ a:hover{
 			margin-left: 93%;
 			top: -12px;
 		}
-		.home_1{
-			margin-top: -28px;
-			margin-left: 56vw;
-		}
-		.menu1{
-			margin-top: -42px;
-			margin-left: 4vw;
-		}
-		.menu2{
-			margin-top: -55px;
-			margin-left: 4vw;
-		}
-		.m_lat{
-			margin-top: -5px;
-			margin-left: -1vw;
-		}
 		.main-home{
 			margin-top: 5%;
 			margin-left: -25%;
@@ -620,23 +439,6 @@ a:hover{
 		#btn_sair{
 			margin-left: 93%;
 			top: -12px;
-		}
-		.home_1{
-			margin-top: -28px;
-			margin-left: 56vw;
-		}
-		.menu1{
-			margin-top: -42px;
-			margin-left: 11vw;
-		}
-		.menu2{
-			margin-top: -55px;
-			margin-left: 11vw;
-		}
-		.m_lat{
-			margin-top: -5px;
-			margin-left: 6vw;
-			width: 190px;
 		}
 		.main-home{
 			margin-top: 5%;
@@ -665,23 +467,6 @@ a:hover{
 			margin-left: 92%;
 			top: -12px;
 		}
-		.home_1{
-			margin-top: -28px;
-			margin-left: 56vw;
-		}
-		.menu1{
-			margin-top: -42px;
-			margin-left: 20vw;
-		}
-		.menu2{
-			margin-top: -55px;
-			margin-left: 20vw;
-		}
-		.m_lat{
-			margin-top: -5px;
-			margin-left: 14vw;
-			width: 140px;
-		}
 		.main-home{
 			margin-top: 5%;
 			margin-left: -25%;
@@ -702,24 +487,6 @@ a:hover{
 		#btn_sair{
 			margin-left: 81%;
 			top: -12px;
-		}
-		.home_1{
-			margin-top: -28px;
-			margin-left: 47vw;
-		}
-		.menu1{
-			margin-top: -42px;
-			margin-left: -32vw;
-		}
-		.menu2{
-			margin-top: -55px;
-			margin-left: -32vw;
-		}
-		.m_lat{
-			margin-top: -5px;
-			margin-left: -26vw;
-			width: 140px;
-			background-color: red;
 		}
 		.main-home{
 			margin-top: 5%;

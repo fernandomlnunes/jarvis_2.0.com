@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/dashboard.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jarvis_2.0</title>
+</head>
+
+<body>
+    <div id="conteinerPrincipal">
+        <div class="navbar">
+
+            <div class="pesquisa">
+                <input type="text" id="pesq" placeholder="Pesquisa" required>
+                <img class="lupa" src="img/lupa.png">
+                <button id="btn_start" onclick='sair()'>INICIAR</button>
+
+                <a href="home.html">
+                    <img class="home_1" src="img/home_1.png"></a>
+            <div class="nav">
+                <input type="checkbox" id="chec">
+                <label for="chec">
+                <img class="menu1" src="img/menu_1.png">
+                <img class="menu2" src="img/menu_2.png">
+                </label>
+                <ul class="m_lat"> 
+                    <input type="checkbox" id="check1">
+                    <label class="labelCheck1" for="check1">Usuário</label>
+                    <img class="down" src="img/down_1.png">
+                <div class="user1">
+                    <ul id="user">
+                        <li><a href="usuarios.html">usuário</a></li>
+                        <li><a href="sessao_user.html">sessão de usuário</a></li>
+                    </ul>
+                </div>
+
+                    <li><a href="status.html">Status</a></li>
+                    <li><a href="dashboard.html" class="servicos">Dashboard</a></li>
+                    <li><a href="#" class="portifolio">Empresas</a></li>		
+                    <li><a href="buscacep.html" class="buscacep">Buscar CEP</a></li>		
+                </ul>
+            </div>
+            </div>		
+        <h1 id="logado"></h1>
+        <button id="btn_sair" onclick='sair()'> Sair
+            <img class="sair" src="img/sair_2.png">
+        </button>
+        <h1 id="logado"></h1>
+    </div>
+    <div class="info">
+        <div class="bloco">
+            <p>R$ 16.351.550,3</p>
+            <P class="txt_bloco">Faturamento</P>
+        </div>
+        <div class="bloco">
+            <p>9.586.139,4</p>
+            <P class="txt_bloco">Total de Custo</P>
+        </div>
+        <div class="bloco">
+            <p>6.765.411,0</p>
+            <P class="txt_bloco">Total Lucro</P>
+        </div>
+        <div class="bloco">
+            <p>21.289</p>
+            <P class="txt_bloco">Número de Pedidos</P>
+        </div>
+        <div class="bloco">
+            <p>52.801</p>
+            <P class="txt_bloco">Itens Vendidos</P>
+        </div>
+    </div>
+    <main class="main_gr">
+        <div class="bar-ctx"> 
+            <canvas id="g_barra" class="g_barra" width="500" height="400"></canvas>
+        </div>
+        <div class="bar_1_ctx"> 
+            <canvas id="g_barra_1" class="g_barra_1" width="500" height="400"></canvas>
+        </div>
+        <div class="line-ctx">
+            <canvas id="g_linha" class="g_linha"></canvas>
+        </div>
+        <div class="circulo-ctx">
+            <canvas id="g_circulo" class="g_circulo"></canvas>
+        </div>
+        <div class="radar-ctx">
+            <canvas id="g_radar" class="g_radar"></canvas>
+        </div>
+    </main>
+    <Script src="js/javasctipt.js"></Script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.js"></script>  
+    <script src="js/dash.js"></script>  
+    <script>
+        //Nome do usuário na tela!! 
+        //let apelid = window.prompt('Como gostaia de ser chamado?')
+        let userLogado = JSON.parse(localStorage.getItem('userLogado')) 
+        let logado = document.querySelector('#logado')
+        logado.innerHTML = `Olá ${userLogado.userCad}`
+    </script>
+</body>
+</html>
