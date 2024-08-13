@@ -27,8 +27,12 @@ main {
     background-color: #fff;
     box-shadow: 2px 2px 10px #CCC;
 }
-
-
+.new_user{
+    margin-top: 10px;
+}
+.modal-close{
+    border-radius: 8px;
+}
 #sidebar {
     display: flex;
     flex-direction: column;
@@ -177,7 +181,7 @@ main {
 }
 
   /* refazer a tag form, impactando no formulario de criação */ 
-form {
+  .form_search {
     display: flex;
     height: 40px;
     padding: 2px;
@@ -187,7 +191,7 @@ form {
     border: 1px solid rgba(155, 155, 155, 0.2);
   }
   
-  form .search-input {
+  .form_search  .search-input {
     height: 100%;
     width: 100%;
     background: none;
@@ -197,7 +201,7 @@ form {
     font-size: 17px;
   }
   
-  form button {
+  .form_search .fa-search {
     padding: 0 15px;
     border: none;
     background: #5198df;
@@ -207,6 +211,6 @@ form {
     cursor: pointer;
   }
   
-  form button:hover {
+  .form_search .fa-search:hover {
     background: #12338f;
   }

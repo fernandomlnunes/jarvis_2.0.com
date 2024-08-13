@@ -1,5 +1,6 @@
 .records{
     width: 100%;
+    margin-top: 10px;
     user-select: none;
     text-align: left;
 }
@@ -10,11 +11,14 @@
     padding-left: 20px;
     font-size: 1.2rem; 
     color: white;   
+    border-radius: 3px;
 }
 .records td{
     height: 50px;
     padding-left: 20px;
     cursor: pointer;
+    border-radius: 3px;
+    background-color: rgba(128, 128, 128, 0.445);
 }
 
 .records th:last-child,

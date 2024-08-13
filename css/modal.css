@@ -23,6 +23,7 @@
     padding-bottom: 20px;
     background-color: white;
     box-shadow: 1px 1px 8px black;
+    border-radius: 8px;
 }
 
 .modal-header{
