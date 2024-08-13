@@ -20,20 +20,10 @@
     </style>
 
 </head>
-
+https://br.linkedin.com/in/fernandonunes-dev
 <body>
-    <div id="conteinerPrincipal">
 
-        <main class="main-home">           
-            Olá, Mestre! 
-            <h1>Gerar Senha</h1>
-            <button onclick="generatePassword()">Gerar Senha</button>
-            <input type="text" id="password" readonly>
-        </main>
-
-
-
-        <nav id="sidebar">
+    <nav id="sidebar">
             <div id="sidebar_content">
                 <div id="user">
                     <img src="img/log.jpg" id="user_avatar" alt="Avatar">
@@ -64,16 +54,25 @@
                         </a>
                     </li>
                     <li class="side-item">
-                        <a href="#">
+                        <a href="home.html">
+                            <i class="fa-solid fa-house-user"></i>
+                            <span class="item-description">
+                                Home
+                            </span>
+                        </a>
+                    </li>
+
+                    <li class="side-item">
+                        <a href="dashboard.html">
                             <i class="fa-solid fa-chart-line"></i>
                             <span class="item-description">
                                 Dashboard
                             </span>
                         </a>
-                    </li>
-    
+                    </li>   
+
                     <li class="side-item">
-                        <a href="#">
+                        <a href="usuarios.html">
                             <i class="fa-solid fa-user"></i>
                             <span class="item-description">
                                 Usuários
@@ -82,7 +81,7 @@
                     </li>
 
                     <li class="side-item">
-                        <a href="#">
+                        <a href="sessao_user.html">
                             <i class="fa-solid fa-users"></i>
                             <span class="item-description">
                                 Sessão de usuário
@@ -91,7 +90,7 @@
                     </li>                    
 
                     <li class="side-item">
-                        <a href="#">
+                        <a href="status.html">
                             <i class="fa-solid fa-list-check"></i>
                             <span class="item-description">
                                 Status
@@ -100,7 +99,7 @@
                     </li>
         
                     <li class="side-item">
-                        <a href="#">
+                        <a href="status.html">
                             <i class="fa-solid fa-list-ul"></i>
                             <span class="item-description">
                                 Sub status
@@ -109,7 +108,7 @@
                     </li>                    
         
                     <li class="side-item">
-                        <a href="#">
+                        <a href="buscacep.html">
                             <i class="fa-solid fa-map-location-dot"></i>
                             <span class="item-description">
                                 Busca CEP
@@ -136,11 +135,21 @@
                 <button id="logout_btn" onclick='sair()'>
                     <i class="fa-solid fa-right-from-bracket"></i>
                     <span class="item-description">
-                        Logout
+                        Sair
                     </span>
                 </button>
             </div>
-        </nav>   
+    </nav>   
+
+    <div id="conteinerPrincipal" id="body_home">
+
+        <main class="main-home">           
+            Olá, Mestre! 
+            <h1>Gerar Senha</h1>
+            <button onclick="generatePassword()">Gerar Senha</button>
+            <input type="text" id="password" readonly>
+        </main>
+    </div>
 
         <Script src="js/js_nav.js"></Script>
         <Script src="js/javasctipt.js"></Script>
