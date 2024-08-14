@@ -22,14 +22,14 @@ body{
 	height: 70px;
 	z-index: 1;
 }
-#logado{
-	display: flex;
-	list-style: none;
-	position: fixed;
-	margin-left: 74%;
-	top: -2px;
-	font-size: 14pt;
-	color: rgb(56, 56, 56);
+.main_sessao{
+    margin-top: 3%;
+    margin-left: 3%;
+    border-radius: 10px;
+    padding: 20px;
+	width: 85%;
+    background-color: #fff;
+    box-shadow: 2px 2px 10px #CCC;
 }
 #btn_sair{
 	display: flex;
@@ -323,10 +323,10 @@ display: none;
     font-size: 13px;
     margin-top: 0;
 }
-button{
+.btn_atz{
     background-color: transparent;
     border-color: rgb(163, 163, 163);
-    color: rgb(163, 163, 163);
+    color: white;
     padding: 7px;
     font-weight: bold;
     font-size: 12pt;
@@ -336,7 +336,7 @@ button{
     overflow: none;
     transition: all .5s ease-out;
 }
-button:hover{
+.btn_atz:hover{
     background-color: rgb(163, 163, 163) ;
     color: black;
 }
@@ -412,7 +412,7 @@ a:hover{
 
 #cadastrarCliente1{
 	margin-top: -40px;
-	margin-left: 63vw;
+	margin-left: 78vw;
 }
 .modal_up{
 	position: fixed;
@@ -457,10 +457,232 @@ a:hover{
 .btn_ss{
 	background-color: #4b94dd;
 	color: white;
+	padding: 5px;
+	border-radius: 3px;
+	border-style: none;
+	cursor: pointer;
 }
 .btn_ss:hover{
 	background-color: rgba(233, 42, 42, 0.678);
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    background-color: #e3e9f7;
+}
+
+main {
+    padding: 20px;
+    z-index: 1;
+    padding-left: calc(82px + 20px);
+}
+
+.main-home{
+    margin-top: 10%;
+    margin-left: 3%;
+    border-radius: 10px;
+    padding: 50px;
+    background-color: #fff;
+    box-shadow: 2px 2px 10px #CCC;
+}
+.new_user{
+    margin-top: 10px;
+}
+.modal-close{
+    border-radius: 8px;
+}
+#sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #ffffff;
+    height: 100vh;
+    border-radius: 0px 18px 18px 0px;
+    position: relative;
+    transition: all .5s;
+    min-width: 82px;
+    z-index: 2;
+}
+
+#sidebar_content {
+    padding: 12px;
+}
+
+#user {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 24px;
+}
+
+#user_avatar {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+#user_infos {
+    display: flex;
+    flex-direction: column;
+}
+
+#user_infos span:last-child {
+    color: #6b6b6b;
+    font-size: 12px;
+}
+
+#side_items {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    list-style: none;
+}
+
+.side-item {
+    border-radius: 8px;
+    padding: 14px;
+    cursor: pointer;
+}
+
+.side-item.active {
+    background-color: #0a66c2;
+    padding: 6px;
+}
+
+.side-item:hover:not(.active),
+#logout_btn:hover {
+    background-color: #e3e9f7;
+}
+
+.side-item a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0a0a0a;
+}
+
+.side-item.active a {
+    color: #e3e9f7;
+}
+
+.side-item a i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+}
+
+#logout {
+    border-top: 1px solid #e3e9f7;
+    padding: 12px;
+}
+
+#logout_btn {
+    border: none;
+    padding: 12px;
+    font-size: 14px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    border-radius: 8px;
+    text-align: start;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+#open_btn {
+    position: absolute;
+    top: 30px;
+    right: -10px;
+    background-color: #0a66c2;
+    color: #e3e9f7;
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+#open_btn_icon {
+    transition: transform .3s ease;
+}
+
+.open-sidebar #open_btn_icon {
+    transform: rotate(180deg);
+}
+
+.item-description {
+    width: 0px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 14px;
+    transition: width .6s;
+    height: 0px;
+}
+
+#sidebar.open-sidebar {
+    min-width: 15%;
+}
+
+#sidebar.open-sidebar .item-description {
+    width: 150px;
+    height: auto;
+}
+
+#sidebar.open-sidebar .side-item a {
+    justify-content: flex-start;
+    gap: 14px;
+}
+
+  /* refazer a tag form, impactando no formulario de criação */ 
+  .form_search {
+    display: flex;
+    height: 40px;
+    padding: 2px;
+    background: #1e232b;
+    min-width: 18% !important;
+    border-radius: 10px;
+    border: 1px solid rgba(155, 155, 155, 0.2);
+  }
+  
+  .form_search  .search-input {
+    height: 100%;
+    width: 100%;
+    background: none;
+    border: none;
+    padding: 0 10px;
+    color: #fff;
+    font-size: 17px;
+  }
+  
+  .form_search .fa-search {
+    padding: 0 15px;
+    border: none;
+    background: #5198df;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 17px;
+    cursor: pointer;
+  }
+  
+  .form_search .fa-search:hover {
+    background: #12338f;
+  }
+
 @media screen and (max-width: 3840px){
 	.menu1{
 		margin-top: -42px;
@@ -481,10 +703,6 @@ a:hover{
 
 }
 @media screen and (max-width: 1920px){
-	#logado{
-		margin-left: 74%;
-		top: -2px;
-	}
 	#cadastrarCliente{
 		margin-left: 59.3vw;
 	}
@@ -524,10 +742,6 @@ a:hover{
 	}
 }
 @media screen and (max-width: 1360px){
-	#logado{
-		margin-left: 74%;
-		top: -2px;
-	}
 	#btn_sair{
 		margin-left: 94%;
 		top: -12px;
@@ -564,10 +778,6 @@ a:hover{
 	}
 }
 @media screen and (max-width: 1280px){
-	#logado{
-		margin-left: 68%;
-		top: -2px;
-	}
 	.pesquisa{
 		margin-top: 28px;
 		margin-left: 34%;
@@ -616,10 +826,6 @@ a:hover{
 	}
 }
 @media screen and (max-width: 1080px){
-	#logado{
-		margin-left: 74%;
-		top: -2px;
-	}
 	#btn_sair{
 		margin-left: 93%;
 		top: -12px;
@@ -660,10 +866,6 @@ a:hover{
 	}
 }
 @media screen and (max-width: 1024px){
-	#logado{
-		margin-left: 76%;
-		top: -2px;
-	}
 	#btn_sair{
 		margin-left: 92%;
 		top: -12px;
@@ -698,10 +900,6 @@ a:hover{
 	}
 }
 @media screen and (max-width: 720px){
-	#logado{
-		margin-left: 65%;
-		top: -2px;
-	}
 	#btn_sair{
 		margin-left: 81%;
 		top: -12px;
