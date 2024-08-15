@@ -46,14 +46,15 @@
 	background-color: rgba(253, 63, 63, 0.65);
 }
 .txt_loading{
-    display: flex;
-    position: relative;
     margin-top: -500%;
+    margin-left: 5%;
     font-weight: bold;
     color: white;
     background-color: grey;
     margin: auto;
+    border-radius: 3px;
 }
+
 @keyframes spin {
     100% {
         transform: rotate(360deg);
