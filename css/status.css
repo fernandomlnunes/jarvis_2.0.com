@@ -1,0 +1,41 @@
+main {
+    padding: 15px;
+    z-index: 1;
+}
+
+.main_status{
+    margin-top: 2%;
+    margin-left: 2%;
+    margin-right: 2%;
+    width: 90%;
+    height: 90vh;
+    border-radius: 10px;
+    padding: 50px;
+    background-color: #fff;
+    box-shadow: 2px 2px 10px #CCC;
+}
+
+.records{
+    margin-top: 10px;
+}
+
+.th_list_t{
+    background-color: #5198df;
+}
+
+.th_list{
+    border-radius: 4px;
+}
+
+.tbody-st{
+    background-color: rgba(128, 128, 128, 0.445);
+}
+
+.tbody-st td{
+    border-radius: 4px;
+}
+
+.mais_s_body{
+    margin-top: -25px;
+    background-color: red;
+}

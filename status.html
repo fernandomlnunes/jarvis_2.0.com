@@ -5,14 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/button.css">
     <link rel="stylesheet" href="css/records-status.css">
     <link rel="stylesheet" href="css/modal-status.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/styles_nav.css"/>
-
+    <link rel="stylesheet" href="css/status.css">
    
     <title>jarvis_2.0</title>
 </head>
@@ -137,15 +136,16 @@
             </div>
     </nav>   
     </div>
-    <main>
+    <main class="main_status">
+        <div class="mais_s_body"></div>
         <button type="button" class="button blue mobile" id="cadastrarStatus">Novo Status</button>
         <table id="tableClient" class="records">
-            <thead class="title-status">
+            <thead class="title-status th_list_t">
                 <tr>
-                    <th>Status</th>
-                    <th>Editar</th>
+                    <th class="th_list">Status</th>
+                    <th class="th_list">Editar</th>
                 </tr>
-            </thead>
+            
             <tbody class="tbody-st">
 
             </tbody>
@@ -170,7 +170,6 @@
     </main>
     <Script src="js/javasctipt.js"></Script>
     <script src="js/main-status.js"></script>
-    <script src="js/see.js"></script>
 
     <Script src="js/js_nav.js"></Script>
 
