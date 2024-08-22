@@ -14,7 +14,9 @@ main {
     background-color: #fff;
     box-shadow: 2px 2px 10px #CCC;
 }
-
+.modal-field{
+    background-color: red;
+}
 .records{
     margin-top: 10px;
 }
