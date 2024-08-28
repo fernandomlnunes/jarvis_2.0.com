@@ -103,7 +103,7 @@
                     </li>
         
                     <li class="side-item">
-                        <a href="#">
+                        <a href="configuracao.html">
                             <i class="fa-solid fa-gear"></i>
                             <span class="item-description">
                                 Configurações
@@ -168,7 +168,7 @@
         
         let userLogado = JSON.parse(localStorage.getItem('userLogado')) 
         let logado = document.querySelector('#logado')
-        logado.innerHTML = `Olá ${userLogado.userCad}`
+        logado.innerHTML = `${userLogado.userCad}`
         </script>
     </body>
 </html>

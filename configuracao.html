@@ -11,12 +11,14 @@
     <link rel="stylesheet" href="css/modal.css">
     <link rel="stylesheet" href="css/buscacep.css"/>
     <link rel="stylesheet" href="css/home.css"/>
+    <link rel="stylesheet" href="css/configuracao.css"/>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/styles_nav.css"/>
    
     <title>jarvis_2.0</title>
+
 </head>
 
 <body>
@@ -36,8 +38,6 @@
                 </div>
                
                 <ul id="side_items">
-    
-    
                     <li class="side-item active pesq_dimensao">
                         <a href="#">
                             <i class="fa-solid fa-magnifying-glass"></i>
@@ -130,39 +130,28 @@
             </div>
         </nav>  
     </div>
-        <main class="buscacep_main">
-            <h1 class="title">Consulta CEP</h1>
-    
-            <div class="row">
-                <div class="inputbox">
-                    <input type="text" id="cep" required>
-                    <label for="cep">CEP</label>
+        <main class="configuracao_main">
+            <div class="configurations">
+                <h1>Configurações da Página</h1>
+        
+                <div class="option">
+                    <label for="background-color">Cor de Fundo:</label>
+                    <input type="color" id="background-color" name="background-color">
                 </div>
-                <div class="inputbox">
-                    <input type="text" id="endereco" required>
-                    <label for="endereco">Endereço</label>
+        
+                <div class="option">
+                    <label for="text-color">Cor do Texto:</label>
+                    <input type="color" id="text-color" name="text-color">
                 </div>
-                <div class="inputbox">
-                    <input type="text" id="numero" required>
-                    <label for="numero">Número</label>
-                </div>
-            </div>
-            <div class="row">
-                <div class="inputbox">
-                    <input type="text" id="bairro" required>
-                    <label for="bairro">Bairro</label>
-                </div>
-                <div class="inputbox">
-                    <input type="text" id="cidade" required>
-                    <label for="cidade">Cidade</label>
-                </div>
-                <div class="inputbox">
-                    <input type="text" id="estado" required>
-                    <label for="estado">Estado</label>
+        
+                <div class="option">
+                    <label for="font-size">Tamanho da Fonte:</label>
+                    <input type="range" id="font-size" name="font-size" min="12" max="36">
                 </div>
             </div>
-            <div class="row">
-                <button>Consultar</button>
+        
+            <div class="content">
+                <p>Este é um exemplo de conteúdo para testar as configurações.</p>
             </div>
         </main>
     <Script src="js/javasctipt.js"></Script>
@@ -172,11 +161,31 @@
 
     <Script src="js/js_nav.js"></Script>
 
-    <script>
-        
+    <script> 
         let userLogado = JSON.parse(localStorage.getItem('userLogado')) 
         let logado = document.querySelector('#logado')
         logado.innerHTML = `${userLogado.userCad}`
-        </script>
+    </script>
+
+    <script>
+        // Seleciona os elementos HTML
+    const bgColorInput = document.getElementById('background-color');
+    const textColorInput = document.getElementById('text-color');
+    const fontSizeInput = document.getElementById('font-size');
+    const content = document.querySelector('.content');
+
+    // Adiciona eventos para alterar as configurações
+    bgColorInput.addEventListener('input', () => {
+        document.body.style.backgroundColor = bgColorInput.value;
+    });
+
+    textColorInput.addEventListener('input', () => {
+        content.style.color = textColorInput.value;
+    });
+
+    fontSizeInput.addEventListener('input', () => {
+        content.style.fontSize = fontSizeInput.value + 'px';
+    });
+    </script>
     </body>
 </html>
