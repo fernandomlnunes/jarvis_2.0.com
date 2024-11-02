@@ -131,27 +131,39 @@
         </nav>  
     </div>
         <main class="configuracao_main">
-            <div class="configurations">
-                <h1>Configurações da Página</h1>
-        
-                <div class="option">
-                    <label for="background-color">Cor de Fundo:</label>
-                    <input type="color" id="background-color" name="background-color">
-                </div>
-        
-                <div class="option">
-                    <label for="text-color">Cor do Texto:</label>
-                    <input type="color" id="text-color" name="text-color">
-                </div>
-        
-                <div class="option">
-                    <label for="font-size">Tamanho da Fonte:</label>
-                    <input type="range" id="font-size" name="font-size" min="12" max="36">
-                </div>
+            <div class="configurations" id="conteudo">
+                <h1>Configurações</h1>
+                <h2>Ajuste as configurações de estilo para personalizar a página.</h2>
             </div>
         
-            <div class="content">
-                <p>Este é um exemplo de conteúdo para testar as configurações.</p>
+            <!-- Opções de Configuração -->
+            <div class="configurations">
+                <!-- Opção para mudar a cor de fundo -->
+                <label for="corFundo">Cor de Fundo:</label>
+                <select id="corFundo" onchange="mudarCorFundo(this.value)">
+                    <option value="">Selecione</option>
+                    <option value="white">Branco</option>
+                    <option value="lightgray">Cinza Claro</option>
+                    <option value="lightblue">Azul Claro</option>
+                </select>
+        
+                <!-- Opção para mudar a cor do texto -->
+                <label for="corTexto">Cor do Texto:</label>
+                <select id="corTexto" onchange="mudarCorTexto(this.value)">
+                    <option value="">Selecione</option>
+                    <option value="black">Preto</option>
+                    <option value="darkred">Vermelho Escuro</option>
+                    <option value="darkgreen">Verde Escuro</option>
+                </select>
+        
+                <!-- Opção para ajustar o tamanho da fonte -->
+                <label for="tamanhoFonte">Tamanho da Fonte:</label>
+                <select id="tamanhoFonte" onchange="mudarTamanhoFonte(this.value)">
+                    <option value="">Selecione</option>
+                    <option value="16px">Pequeno</option>
+                    <option value="20px">Médio</option>
+                    <option value="24px">Grande</option>
+                </select>
             </div>
         </main>
     <Script src="js/javasctipt.js"></Script>
@@ -168,24 +180,21 @@
     </script>
 
     <script>
-        // Seleciona os elementos HTML
-    const bgColorInput = document.getElementById('background-color');
-    const textColorInput = document.getElementById('text-color');
-    const fontSizeInput = document.getElementById('font-size');
-    const content = document.querySelector('.content');
+        // Função para mudar a cor de fundo
+        function mudarCorFundo(cor) {
+            document.body.style.backgroundColor = cor;
+        }
 
-    // Adiciona eventos para alterar as configurações
-    bgColorInput.addEventListener('input', () => {
-        document.body.style.backgroundColor = bgColorInput.value;
-    });
+        // Função para mudar a cor do texto
+        function mudarCorTexto(cor) {
+            document.getElementById("conteudo").style.color = cor;
+        }
 
-    textColorInput.addEventListener('input', () => {
-        content.style.color = textColorInput.value;
-    });
-
-    fontSizeInput.addEventListener('input', () => {
-        content.style.fontSize = fontSizeInput.value + 'px';
-    });
+        // Função para ajustar o tamanho da fonte
+        function mudarTamanhoFonte(tamanho) {
+            document.getElementById("conteudo").style.fontSize = tamanho;
+        }
+    </script>
     </script>
     </body>
 </html>
