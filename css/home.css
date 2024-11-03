@@ -209,7 +209,6 @@ hr{
 p{
     color: rgb(163, 163, 163);
     font-size: 14pt;
-    text-align: center;
 }
 a{
     color: gray;
@@ -319,6 +318,68 @@ a:hover{
 	background-color: rgba(233, 42, 42, 0.678);
 }
 
+#listaClientes {
+	list-style: none;
+	padding-right: 40px;
+}
+#listaClientes li {
+	background-color: rgb(190, 190, 190);
+	margin-top: 10px;
+	padding: 10px;
+	width: 75vw;
+	border-radius: 6px;
+	cursor: pointer;
+	display: flex;
+	justify-content: space-between;
+}
+.cliente-info {
+	margin-top: 20px;
+	width: 700px;
+	padding: 10px;
+	border: 1px solid #ddd;
+	display: none; /* Oculto por padrão */
+}
+.btn_voltar {
+	cursor: pointer;
+	color: blue;
+}
+.documento-img {
+	margin-top: -350px;
+	margin-left: 350px;
+	width: 100%;
+	max-width: 300px;
+	border-radius: 6px;
+}
+
+.list_propostas{
+	margin-top: 3%;
+    margin-left: 3%;
+    border-radius: 10px;
+    padding: 50px;
+    background-color: #fff;
+    box-shadow: 2px 2px 10px #CCC;
+}
+.ppts{
+	display: flex;
+	list-style: none;
+	font-weight: bold;
+	font-size: 12pt;
+	padding: 10px;
+	color: white;
+	background-color: #5198df;
+}
+.ppts_li1{
+	padding-left: 150px;
+}
+.ppts_li2{
+	padding-left: 250px;
+}
+.ppts_li3{
+	padding-left: 400px;
+}
+.ppts_li4{
+	padding-left: 400px;
+}
 	@media screen and (max-width: 1920px){
 		#cadastrarCliente{
 			margin-left: 59.3vw;

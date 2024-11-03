@@ -8,17 +8,6 @@
     <link rel="stylesheet" href="css/styles_nav.css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>jarvis_2.0</title>
-
-    <style>
-  #password {
-    font-size: 20px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    width: 300px;
-    margin: 0 auto;
-  }
-    </style>
-
 </head>
 
 <body>
@@ -134,19 +123,94 @@
 
     <div id="conteinerPrincipal" id="body_home">
 
-        <main class="main-home">           
-            Olá, Mestre! 
-            <h1>Gerar Senha</h1>
-            <button onclick="generatePassword()">Gerar Senha</button>
-            <input type="text" id="password" readonly>
+        <main class="list_propostas">           
+            <div id="tlt_ppt" class="tlt_ppt">
+                <ul class="ppts"> 
+                    <li class="ppts_li1">Nome</li>
+                    <li class="ppts_li2">CPF</li>
+                    <li class="ppts_li3">Email</li>
+                    <li class="ppts_li4">Telefone</li>			
+                </ul>
+            </div>
+            <ul id="listaClientes"></ul>
+        
+            <div id="clienteInfo" class="cliente-info">
+                <h3>Empresa: Google</h3>
+                
+                <p><strong>Nome:</strong> <span id="clienteNome"></span></p>
+                <p><strong>ID:</strong> <span id="clienteId"></span></p>
+                <p><strong>Email:</strong> <span id="clienteEmail"></span></p>
+                <p><strong>Telefone:</strong> <span id="clienteTelefone"></span></p>
+                <p><strong>CPF:</strong> <span id="clienteCPF"></span></p>
+                <p><strong>UF:</strong> <span id="clienteUF"></span></p>
+                <!-- Imagem do documento -->
+                <img id="documentoImg" class="documento-img" src="" alt="Documento de Identificação">
+                
+                <a class="btn_voltar" href="#" onclick="voltar()">Finalizar</a>
+            </div>
         </main>
     </div>
 
         <Script src="js/js_nav.js"></Script>
         <Script src="js/javasctipt.js"></Script>
-        
+
+    <Script>
+        const clientes = [
+            { id: 1, nome: "Ana Souza", email: "ana.souza@email.com", telefone: "(11) 99999-1111", cpf: "123.456.789-00", uf: "SP", documentoImg: "https://www.portaldotransito.com.br/wp-content/uploads/2024/07/nova-carteira-de-identidade-1024x654.jpg.webp" },
+            { id: 2, nome: "Carlos Lima", email: "carlos.lima@email.com", telefone: "(11) 98888-2222", cpf: "234.567.890-11", uf: "RJ", documentoImg: "https://www.portaldotransito.com.br/wp-content/uploads/2024/07/nova-carteira-de-identidade-1024x654.jpg.webp" },
+            { id: 3, nome: "Fernanda Silva", email: "fernanda.silva@email.com", telefone: "(11) 97777-3333", cpf: "345.678.901-22", uf: "MG", documentoImg: "https://www.portaldotransito.com.br/wp-content/uploads/2024/07/nova-carteira-de-identidade-1024x654.jpg.webp" },
+            { id: 4, nome: "Ricardo Pereira", email: "ricardo.pereira@email.com", telefone: "(11) 96666-4444", cpf: "456.789.012-33", uf: "RS", documentoImg: "https://www.portaldotransito.com.br/wp-content/uploads/2024/07/nova-carteira-de-identidade-1024x654.jpg.webp" },
+            { id: 5, nome: "Juliana Costa", email: "juliana.costa@email.com", telefone: "(11) 95555-5555", cpf: "567.890.123-44", uf: "BA", documentoImg: "https://www.portaldotransito.com.br/wp-content/uploads/2024/07/nova-carteira-de-identidade-1024x654.jpg.webp" },
+            { id: 6, nome: "Bruno Alves", email: "bruno.alves@email.com", telefone: "(11) 94444-6666", cpf: "678.901.234-55", uf: "PR", documentoImg: "https://www.portaldotransito.com.br/wp-content/uploads/2024/07/nova-carteira-de-identidade-1024x654.jpg.webp" },
+            { id: 7, nome: "Patrícia Martins", email: "patricia.martins@email.com", telefone: "(11) 93333-7777", cpf: "789.012.345-66", uf: "SP", documentoImg: "https://www.portaldotransito.com.br/wp-content/uploads/2024/07/nova-carteira-de-identidade-1024x654.jpg.webp" },
+            { id: 8, nome: "Leonardo Gomes", email: "leonardo.gomes@email.com", telefone: "(11) 92222-8888", cpf: "890.123.456-77", uf: "RJ", documentoImg: "https://www.portaldotransito.com.br/wp-content/uploads/2024/07/nova-carteira-de-identidade-1024x654.jpg.webp" },
+            { id: 9, nome: "Mariana Rocha", email: "mariana.rocha@email.com", telefone: "(11) 91111-9999", cpf: "901.234.567-88", uf: "MG", documentoImg: "https://www.portaldotransito.com.br/wp-content/uploads/2024/07/nova-carteira-de-identidade-1024x654.jpg.webp" },
+            { id: 10, nome: "Thiago Dias", email: "thiago.dias@email.com", telefone: "(11) 90000-0000", cpf: "012.345.678-99", uf: "RS", documentoImg: "https://www.portaldotransito.com.br/wp-content/uploads/2024/07/nova-carteira-de-identidade-1024x654.jpg.webp" },
+            { id: 11, nome: "Natália Lima", email: "natalia.lima@email.com", telefone: "(11) 89999-1111", cpf: "123.456.789-01", uf: "BA", documentoImg: "https://www.portaldotransito.com.br/wp-content/uploads/2024/07/nova-carteira-de-identidade-1024x654.jpg.webp" },
+            { id: 12, nome: "Gabriel Santos", email: "gabriel.santos@email.com", telefone: "(11) 88888-2222", cpf: "234.567.890-12", uf: "PR", documentoImg: "https://www.portaldotransito.com.br/wp-content/uploads/2024/07/nova-carteira-de-identidade-1024x654.jpg.webp" },
+        ];
+
+        const listaClientes = document.getElementById("listaClientes");
+        const clienteInfo = document.getElementById("clienteInfo");
+        const clienteNome = document.getElementById("clienteNome");
+        const clienteId = document.getElementById("clienteId");
+        const clienteEmail = document.getElementById("clienteEmail");
+        const clienteTelefone = document.getElementById("clienteTelefone");
+        const clienteCPF = document.getElementById("clienteCPF");
+        const clienteUF = document.getElementById("clienteUF");
+        const documentoImg = document.getElementById("documentoImg");
+        const navPpt = document.getElementById("tlt_ppt");        
+
+        function mostrarArquivoCliente(cliente) {
+            clienteNome.textContent = cliente.nome;
+            clienteId.textContent = cliente.id;
+            clienteEmail.textContent = cliente.email;
+            clienteTelefone.textContent = cliente.telefone;
+            clienteCPF.textContent = cliente.cpf;
+            clienteUF.textContent = cliente.uf;
+            documentoImg.src = cliente.documentoImg;
+
+            listaClientes.style.display = "none";
+            navPpt.style.display = "none";
+            clienteInfo.style.display = "block";
+        }
+
+        function voltar() {
+            listaClientes.style.display = "block";
+            navPpt.style.display = "block"
+            clienteInfo.style.display = "none";
+        }
+
+        clientes.forEach(cliente => {
+            const li = document.createElement("li");
+            li.innerHTML = `<span>${cliente.nome}</span> <span>${cliente.cpf}</span> <span>${cliente.email}</span> <span>${cliente.telefone}</span>`;
+            li.addEventListener("click", () => mostrarArquivoCliente(cliente));
+            listaClientes.appendChild(li);
+        });
+    </Script>
+   
     <script>
-        //Nome do usuário na tela!! 
+        //Nome do usuário na tela!
 
         //let apelid = window.prompt('Como gostaia de ser chamado?')
         let userLogado = JSON.parse(localStorage.getItem('userLogado')) 
