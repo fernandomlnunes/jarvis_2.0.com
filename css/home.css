@@ -359,26 +359,38 @@ a:hover{
     background-color: #fff;
     box-shadow: 2px 2px 10px #CCC;
 }
+.tlt_ppt{
+	display: flex;
+	border-radius: 6px;
+	width: 80vw;
+}
 .ppts{
 	display: flex;
+	position: relative;
+	width: 75vw;
 	list-style: none;
 	font-weight: bold;
 	font-size: 12pt;
 	padding: 10px;
 	color: white;
 	background-color: #5198df;
+	border-radius: 6px;
 }
 .ppts_li1{
-	padding-left: 150px;
+	padding-left: 1vw;
+	position: relative;
 }
 .ppts_li2{
-	padding-left: 250px;
+	padding-left: 19vw;
+	position: relative;
 }
 .ppts_li3{
-	padding-left: 400px;
+	padding-left: 22vw;
+	position: relative;
 }
 .ppts_li4{
-	padding-left: 400px;
+	padding-left: 20vw;
+	position: relative;
 }
 	@media screen and (max-width: 1920px){
 		#cadastrarCliente{
