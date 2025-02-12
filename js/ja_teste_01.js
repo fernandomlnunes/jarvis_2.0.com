@@ -352,6 +352,630 @@ class Personagem {
     }
 }
 
+console.log("Olá");
+
+function validarEmail(email) {
+    const regex = /\S+@\S+\.\S+/;
+    return regex.test(email);
+}
+function gerarNumeroAleatorio(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+function formatarData(data) {
+    return new Date(data).toLocaleDateString('pt-BR');
+}
+function esconderElemento(id) {
+    document.getElementById(id).style.display = 'none';
+}
+function mostrarElemento(id) {
+    document.getElementById(id).style.display = 'block';
+}
+function removerItem(array, item) {
+    const index = array.indexOf(item);
+    if (index !== -1) {
+        array.splice(index, 1);
+    }
+}
+function ordenarPorPropriedade(array, propriedade) {
+    return array.sort((a, b) => a[propriedade] - b[propriedade]);
+}
+const numero = parseInt('123');
+const decimal = parseFloat('123.45');
+function validarInteiro(numero) {
+    return Number.isInteger(numero);
+}
+function validarDecimal(numero) {
+    return !isNaN(numero) && numero % 1 !== 0;
+}
+function objetoVazio(objeto) {
+    return Object.keys(objeto).length === 0;
+}
+function copiarParaAreaTransferencia(texto) {
+    navigator.clipboard.writeText(texto);
+}
+// Definindo uma classe para representar uma tarefa
+class Tarefa {
+    constructor(descricao, concluida = false) {
+        this.descricao = descricao;
+        this.concluida = concluida;
+    }
+}
+
+// Definindo uma classe para representar o sistema de gerenciamento de tarefas
+class GerenciadorTarefas {
+    constructor() {
+        this.tarefas = [];
+    }
+
+    // Método para adicionar uma nova tarefa
+    adicionarTarefa(descricao) {
+        const novaTarefa = new Tarefa(descricao);
+        this.tarefas.push(novaTarefa);
+    }
+
+    // Método para remover uma tarefa
+    removerTarefa(indice) {
+        if (indice >= 0 && indice < this.tarefas.length) {
+            this.tarefas.splice(indice, 1);
+        }
+    }
+
+    // Método para marcar uma tarefa como concluída
+    marcarComoConcluida(indice) {
+        if (indice >= 0 && indice < this.tarefas.length) {
+            this.tarefas[indice].concluida = true;
+        }
+    }
+
+    // Método para listar todas as tarefas
+    listarTarefas() {
+        this.tarefas.forEach((tarefa, indice) => {
+            console.log(`${indice + 1}. [${tarefa.concluida ? 'X' : ' '}] ${tarefa.descricao}`);
+        });
+    }
+}
+
+// Exemplo de uso do sistema de gerenciamento de tarefas
+const gerenciador = new GerenciadorTarefas();
+
+gerenciador.adicionarTarefa('Estudar JavaScript');
+gerenciador.adicionarTarefa('Fazer compras');
+gerenciador.adicionarTarefa('Ler um livro');
+
+console.log('--- Tarefas Pendentes ---');
+gerenciador.listarTarefas();
+
+gerenciador.marcarComoConcluida(1);
+
+console.log('\n--- Tarefas Atualizadas ---');
+gerenciador.listarTarefas();
+
+gerenciador.removerTarefa(0);
+
+console.log('\n--- Tarefas Atualizadas ---');
+gerenciador.listarTarefas();
+// Definição das classes de personagem
+class Personagem {
+    constructor(nome, classe, hp, atk) {
+        this.nome = nome;
+        this.classe = classe;
+        this.hp = hp;
+        this.atk = atk;
+    }
+
+    atacar(alvo) {
+        const dano = Math.floor(Math.random() * (this.atk / 2)) + (this.atk / 2);
+        alvo.hp -= dano;
+        console.log(`${this.nome} ataca ${alvo.nome} e causa ${dano} de dano.`);
+    }
+}
+
+// Definição dos inimigos
+class Inimigo {
+    constructor(nome, hp, atk) {
+        this.nome = nome;
+        this.hp = hp;
+        this.atk = atk;
+    }
+
+    atacar(alvo) {
+        const dano = Math.floor(Math.random() * (this.atk / 2)) + (this.atk / 2);
+        alvo.hp -= dano;
+        console.log(`${this.nome} ataca ${alvo.nome} e causa ${dano} de dano.`);
+    }
+}
+
+// Função para simular uma batalha
+function batalhar(jogador, inimigo) {
+    console.log(`Um ${inimigo.nome} apareceu!`);
+    console.log(`Começa a batalha entre ${jogador.nome} e ${inimigo.nome}.`);
+    
+    while (jogador.hp > 0 && inimigo.hp > 0) {
+        jogador.atacar(inimigo);
+        if (inimigo.hp <= 0) {
+            console.log(`${inimigo.nome} foi derrotado!`);
+            break;
+        }
+        inimigo.atacar(jogador);
+        if (jogador.hp <= 0) {
+            console.log(`${jogador.nome} foi derrotado!`);
+            break;
+        }
+    }
+}
+
+console.log("Olá");
+
+function validarEmail(email) {
+    const regex = /\S+@\S+\.\S+/;
+    return regex.test(email);
+}
+function gerarNumeroAleatorio(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+function formatarData(data) {
+    return new Date(data).toLocaleDateString('pt-BR');
+}
+function esconderElemento(id) {
+    document.getElementById(id).style.display = 'none';
+}
+function mostrarElemento(id) {
+    document.getElementById(id).style.display = 'block';
+}
+function removerItem(array, item) {
+    const index = array.indexOf(item);
+    if (index !== -1) {
+        array.splice(index, 1);
+    }
+}
+function ordenarPorPropriedade(array, propriedade) {
+    return array.sort((a, b) => a[propriedade] - b[propriedade]);
+}
+const numero = parseInt('123');
+const decimal = parseFloat('123.45');
+function validarInteiro(numero) {
+    return Number.isInteger(numero);
+}
+function validarDecimal(numero) {
+    return !isNaN(numero) && numero % 1 !== 0;
+}
+function objetoVazio(objeto) {
+    return Object.keys(objeto).length === 0;
+}
+function copiarParaAreaTransferencia(texto) {
+    navigator.clipboard.writeText(texto);
+}
+// Definindo uma classe para representar uma tarefa
+class Tarefa {
+    constructor(descricao, concluida = false) {
+        this.descricao = descricao;
+        this.concluida = concluida;
+    }
+}
+
+// Definindo uma classe para representar o sistema de gerenciamento de tarefas
+class GerenciadorTarefas {
+    constructor() {
+        this.tarefas = [];
+    }
+
+    // Método para adicionar uma nova tarefa
+    adicionarTarefa(descricao) {
+        const novaTarefa = new Tarefa(descricao);
+        this.tarefas.push(novaTarefa);
+    }
+
+    // Método para remover uma tarefa
+    removerTarefa(indice) {
+        if (indice >= 0 && indice < this.tarefas.length) {
+            this.tarefas.splice(indice, 1);
+        }
+    }
+
+    // Método para marcar uma tarefa como concluída
+    marcarComoConcluida(indice) {
+        if (indice >= 0 && indice < this.tarefas.length) {
+            this.tarefas[indice].concluida = true;
+        }
+    }
+
+    // Método para listar todas as tarefas
+    listarTarefas() {
+        this.tarefas.forEach((tarefa, indice) => {
+            console.log(`${indice + 1}. [${tarefa.concluida ? 'X' : ' '}] ${tarefa.descricao}`);
+        });
+    }
+}
+
+// Exemplo de uso do sistema de gerenciamento de tarefas
+const gerenciador = new GerenciadorTarefas();
+
+gerenciador.adicionarTarefa('Estudar JavaScript');
+gerenciador.adicionarTarefa('Fazer compras');
+gerenciador.adicionarTarefa('Ler um livro');
+
+console.log('--- Tarefas Pendentes ---');
+gerenciador.listarTarefas();
+
+gerenciador.marcarComoConcluida(1);
+
+console.log('\n--- Tarefas Atualizadas ---');
+gerenciador.listarTarefas();
+
+gerenciador.removerTarefa(0);
+
+console.log('\n--- Tarefas Atualizadas ---');
+gerenciador.listarTarefas();
+// Definição das classes de personagem
+class Personagem {
+    constructor(nome, classe, hp, atk) {
+        this.nome = nome;
+        this.classe = classe;
+        this.hp = hp;
+        this.atk = atk;
+    }
+
+    atacar(alvo) {
+        const dano = Math.floor(Math.random() * (this.atk / 2)) + (this.atk / 2);
+        alvo.hp -= dano;
+        console.log(`${this.nome} ataca ${alvo.nome} e causa ${dano} de dano.`);
+    }
+}
+
+console.log("Olá");
+
+function validarEmail(email) {
+    const regex = /\S+@\S+\.\S+/;
+    return regex.test(email);
+}
+function gerarNumeroAleatorio(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+function formatarData(data) {
+    return new Date(data).toLocaleDateString('pt-BR');
+}
+function esconderElemento(id) {
+    document.getElementById(id).style.display = 'none';
+}
+function mostrarElemento(id) {
+    document.getElementById(id).style.display = 'block';
+}
+function removerItem(array, item) {
+    const index = array.indexOf(item);
+    if (index !== -1) {
+        array.splice(index, 1);
+    }
+}
+function ordenarPorPropriedade(array, propriedade) {
+    return array.sort((a, b) => a[propriedade] - b[propriedade]);
+}
+const numero = parseInt('123');
+const decimal = parseFloat('123.45');
+function validarInteiro(numero) {
+    return Number.isInteger(numero);
+}
+function validarDecimal(numero) {
+    return !isNaN(numero) && numero % 1 !== 0;
+}
+function objetoVazio(objeto) {
+    return Object.keys(objeto).length === 0;
+}
+function copiarParaAreaTransferencia(texto) {
+    navigator.clipboard.writeText(texto);
+}
+// Definindo uma classe para representar uma tarefa
+class Tarefa {
+    constructor(descricao, concluida = false) {
+        this.descricao = descricao;
+        this.concluida = concluida;
+    }
+}
+
+// Definindo uma classe para representar o sistema de gerenciamento de tarefas
+class GerenciadorTarefas {
+    constructor() {
+        this.tarefas = [];
+    }
+
+    // Método para adicionar uma nova tarefa
+    adicionarTarefa(descricao) {
+        const novaTarefa = new Tarefa(descricao);
+        this.tarefas.push(novaTarefa);
+    }
+
+    // Método para remover uma tarefa
+    removerTarefa(indice) {
+        if (indice >= 0 && indice < this.tarefas.length) {
+            this.tarefas.splice(indice, 1);
+        }
+    }
+
+    // Método para marcar uma tarefa como concluída
+    marcarComoConcluida(indice) {
+        if (indice >= 0 && indice < this.tarefas.length) {
+            this.tarefas[indice].concluida = true;
+        }
+    }
+
+    // Método para listar todas as tarefas
+    listarTarefas() {
+        this.tarefas.forEach((tarefa, indice) => {
+            console.log(`${indice + 1}. [${tarefa.concluida ? 'X' : ' '}] ${tarefa.descricao}`);
+        });
+    }
+}
+
+// Exemplo de uso do sistema de gerenciamento de tarefas
+const gerenciador = new GerenciadorTarefas();
+
+gerenciador.adicionarTarefa('Estudar JavaScript');
+gerenciador.adicionarTarefa('Fazer compras');
+gerenciador.adicionarTarefa('Ler um livro');
+
+console.log('--- Tarefas Pendentes ---');
+gerenciador.listarTarefas();
+
+gerenciador.marcarComoConcluida(1);
+
+console.log('\n--- Tarefas Atualizadas ---');
+gerenciador.listarTarefas();
+
+gerenciador.removerTarefa(0);
+
+console.log('\n--- Tarefas Atualizadas ---');
+gerenciador.listarTarefas();
+// Definição das classes de personagem
+class Personagem {
+    constructor(nome, classe, hp, atk) {
+        this.nome = nome;
+        this.classe = classe;
+        this.hp = hp;
+        this.atk = atk;
+    }
+
+    atacar(alvo) {
+        const dano = Math.floor(Math.random() * (this.atk / 2)) + (this.atk / 2);
+        alvo.hp -= dano;
+        console.log(`${this.nome} ataca ${alvo.nome} e causa ${dano} de dano.`);
+    }
+}
+
+console.log("Olá");
+
+function validarEmail(email) {
+    const regex = /\S+@\S+\.\S+/;
+    return regex.test(email);
+}
+function gerarNumeroAleatorio(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+function formatarData(data) {
+    return new Date(data).toLocaleDateString('pt-BR');
+}
+function esconderElemento(id) {
+    document.getElementById(id).style.display = 'none';
+}
+function mostrarElemento(id) {
+    document.getElementById(id).style.display = 'block';
+}
+function removerItem(array, item) {
+    const index = array.indexOf(item);
+    if (index !== -1) {
+        array.splice(index, 1);
+    }
+}
+function ordenarPorPropriedade(array, propriedade) {
+    return array.sort((a, b) => a[propriedade] - b[propriedade]);
+}
+const numero = parseInt('123');
+const decimal = parseFloat('123.45');
+function validarInteiro(numero) {
+    return Number.isInteger(numero);
+}
+function validarDecimal(numero) {
+    return !isNaN(numero) && numero % 1 !== 0;
+}
+function objetoVazio(objeto) {
+    return Object.keys(objeto).length === 0;
+}
+function copiarParaAreaTransferencia(texto) {
+    navigator.clipboard.writeText(texto);
+}
+// Definindo uma classe para representar uma tarefa
+class Tarefa {
+    constructor(descricao, concluida = false) {
+        this.descricao = descricao;
+        this.concluida = concluida;
+    }
+}
+
+// Definindo uma classe para representar o sistema de gerenciamento de tarefas
+class GerenciadorTarefas {
+    constructor() {
+        this.tarefas = [];
+    }
+
+    // Método para adicionar uma nova tarefa
+    adicionarTarefa(descricao) {
+        const novaTarefa = new Tarefa(descricao);
+        this.tarefas.push(novaTarefa);
+    }
+
+    // Método para remover uma tarefa
+    removerTarefa(indice) {
+        if (indice >= 0 && indice < this.tarefas.length) {
+            this.tarefas.splice(indice, 1);
+        }
+    }
+
+    // Método para marcar uma tarefa como concluída
+    marcarComoConcluida(indice) {
+        if (indice >= 0 && indice < this.tarefas.length) {
+            this.tarefas[indice].concluida = true;
+        }
+    }
+
+    // Método para listar todas as tarefas
+    listarTarefas() {
+        this.tarefas.forEach((tarefa, indice) => {
+            console.log(`${indice + 1}. [${tarefa.concluida ? 'X' : ' '}] ${tarefa.descricao}`);
+        });
+    }
+}
+
+// Exemplo de uso do sistema de gerenciamento de tarefas
+const gerenciador = new GerenciadorTarefas();
+
+gerenciador.adicionarTarefa('Estudar JavaScript');
+gerenciador.adicionarTarefa('Fazer compras');
+gerenciador.adicionarTarefa('Ler um livro');
+
+console.log('--- Tarefas Pendentes ---');
+gerenciador.listarTarefas();
+
+gerenciador.marcarComoConcluida(1);
+
+console.log('\n--- Tarefas Atualizadas ---');
+gerenciador.listarTarefas();
+
+gerenciador.removerTarefa(0);
+
+console.log('\n--- Tarefas Atualizadas ---');
+gerenciador.listarTarefas();
+// Definição das classes de personagem
+class Personagem {
+    constructor(nome, classe, hp, atk) {
+        this.nome = nome;
+        this.classe = classe;
+        this.hp = hp;
+        this.atk = atk;
+    }
+
+    atacar(alvo) {
+        const dano = Math.floor(Math.random() * (this.atk / 2)) + (this.atk / 2);
+        alvo.hp -= dano;
+        console.log(`${this.nome} ataca ${alvo.nome} e causa ${dano} de dano.`);
+    }
+}
+
+console.log("Olá");
+
+function validarEmail(email) {
+    const regex = /\S+@\S+\.\S+/;
+    return regex.test(email);
+}
+function gerarNumeroAleatorio(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+function formatarData(data) {
+    return new Date(data).toLocaleDateString('pt-BR');
+}
+function esconderElemento(id) {
+    document.getElementById(id).style.display = 'none';
+}
+function mostrarElemento(id) {
+    document.getElementById(id).style.display = 'block';
+}
+function removerItem(array, item) {
+    const index = array.indexOf(item);
+    if (index !== -1) {
+        array.splice(index, 1);
+    }
+}
+function ordenarPorPropriedade(array, propriedade) {
+    return array.sort((a, b) => a[propriedade] - b[propriedade]);
+}
+const numero = parseInt('123');
+const decimal = parseFloat('123.45');
+function validarInteiro(numero) {
+    return Number.isInteger(numero);
+}
+function validarDecimal(numero) {
+    return !isNaN(numero) && numero % 1 !== 0;
+}
+function objetoVazio(objeto) {
+    return Object.keys(objeto).length === 0;
+}
+function copiarParaAreaTransferencia(texto) {
+    navigator.clipboard.writeText(texto);
+}
+// Definindo uma classe para representar uma tarefa
+class Tarefa {
+    constructor(descricao, concluida = false) {
+        this.descricao = descricao;
+        this.concluida = concluida;
+    }
+}
+
+// Definindo uma classe para representar o sistema de gerenciamento de tarefas
+class GerenciadorTarefas {
+    constructor() {
+        this.tarefas = [];
+    }
+
+    // Método para adicionar uma nova tarefa
+    adicionarTarefa(descricao) {
+        const novaTarefa = new Tarefa(descricao);
+        this.tarefas.push(novaTarefa);
+    }
+
+    // Método para remover uma tarefa
+    removerTarefa(indice) {
+        if (indice >= 0 && indice < this.tarefas.length) {
+            this.tarefas.splice(indice, 1);
+        }
+    }
+
+    // Método para marcar uma tarefa como concluída
+    marcarComoConcluida(indice) {
+        if (indice >= 0 && indice < this.tarefas.length) {
+            this.tarefas[indice].concluida = true;
+        }
+    }
+
+    // Método para listar todas as tarefas
+    listarTarefas() {
+        this.tarefas.forEach((tarefa, indice) => {
+            console.log(`${indice + 1}. [${tarefa.concluida ? 'X' : ' '}] ${tarefa.descricao}`);
+        });
+    }
+}
+
+// Exemplo de uso do sistema de gerenciamento de tarefas
+const gerenciador = new GerenciadorTarefas();
+
+gerenciador.adicionarTarefa('Estudar JavaScript');
+gerenciador.adicionarTarefa('Fazer compras');
+gerenciador.adicionarTarefa('Ler um livro');
+
+console.log('--- Tarefas Pendentes ---');
+gerenciador.listarTarefas();
+
+gerenciador.marcarComoConcluida(1);
+
+console.log('\n--- Tarefas Atualizadas ---');
+gerenciador.listarTarefas();
+
+gerenciador.removerTarefa(0);
+
+console.log('\n--- Tarefas Atualizadas ---');
+gerenciador.listarTarefas();
+// Definição das classes de personagem
+class Personagem {
+    constructor(nome, classe, hp, atk) {
+        this.nome = nome;
+        this.classe = classe;
+        this.hp = hp;
+        this.atk = atk;
+    }
+
+    atacar(alvo) {
+        const dano = Math.floor(Math.random() * (this.atk / 2)) + (this.atk / 2);
+        alvo.hp -= dano;
+        console.log(`${this.nome} ataca ${alvo.nome} e causa ${dano} de dano.`);
+    }
+}
+
 // Definição dos inimigos
 class Inimigo {
     constructor(nome, hp, atk) {
