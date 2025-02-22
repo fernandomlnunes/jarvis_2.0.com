@@ -388,6 +388,71 @@ function removerItem(array, item) {
         array.splice(index, 1);
     }
 }
+console.log("Olá");
+
+function validarEmail(email) {
+    const regex = /\S+@\S+\.\S+/;
+    return regex.test(email);
+}
+function gerarNumeroAleatorio(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+function formatarData(data) {
+    return new Date(data).toLocaleDateString('pt-BR');
+}
+function esconderElemento(id) {
+    document.getElementById(id).style.display = 'none';
+}
+function mostrarElemento(id) {
+    document.getElementById(id).style.display = 'block';
+}
+function removerItem(array, item) {
+    const index = array.indexOf(item);
+    if (index !== -1) {
+        array.splice(index, 1);
+    }
+}
+function ordenarPorPropriedade(array, propriedade) {
+    return array.sort((a, b) => a[propriedade] - b[propriedade]);
+}
+const numero = parseInt('123');
+const decimal = parseFloat('123.45');
+function validarInteiro(numero) {
+    return Number.isInteger(numero);
+}
+function validarDecimal(numero) {
+    return !isNaN(numero) && numero % 1 !== 0;
+}
+function objetoVazio(objeto) {
+    return Object.keys(objeto).length === 0;
+}
+function copiarParaAreaTransferencia(texto) {
+    navigator.clipboard.writeText(texto);
+}
+console.log("Olá");
+
+function validarEmail(email) {
+    const regex = /\S+@\S+\.\S+/;
+    return regex.test(email);
+}
+function gerarNumeroAleatorio(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+function formatarData(data) {
+    return new Date(data).toLocaleDateString('pt-BR');
+}
+function esconderElemento(id) {
+    document.getElementById(id).style.display = 'none';
+}
+function mostrarElemento(id) {
+    document.getElementById(id).style.display = 'block';
+}
+function removerItem(array, item) {
+    const index = array.indexOf(item);
+    if (index !== -1) {
+        array.splice(index, 1);
+    }
+}
 function ordenarPorPropriedade(array, propriedade) {
     return array.sort((a, b) => a[propriedade] - b[propriedade]);
 }
